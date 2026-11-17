@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "name": "vias_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [[-74.17, 4.6245], [-74.1695, 4.6255], [-74.169, 4.6265]] },
+      "properties": { "id": null, "nombre": "Carrera 80", "sector": "I", "osm_id": "respaldo/via-1", "tipo_via": "residential", "estado": "regular" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [[-74.1685, 4.6275], [-74.1678, 4.628], [-74.167, 4.6286]] },
+      "properties": { "id": null, "nombre": "Calle 40 Sur", "sector": "I", "osm_id": "respaldo/via-2", "tipo_via": "residential", "estado": "bueno" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [[-74.1665, 4.6262], [-74.165, 4.6268], [-74.1635, 4.6274]] },
+      "properties": { "id": null, "nombre": "Avenida Chucua", "sector": "II", "osm_id": "respaldo/via-3", "tipo_via": "secondary", "estado": "regular" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [[-74.1655, 4.6298], [-74.1646, 4.63], [-74.1638, 4.6302]] },
+      "properties": { "id": null, "nombre": "Calle 38 Sur", "sector": "II", "osm_id": "respaldo/via-4", "tipo_via": "residential", "estado": "sin_evaluar" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [[-74.1625, 4.6251], [-74.1615, 4.6257], [-74.1605, 4.6263]] },
+      "properties": { "id": null, "nombre": "Carrera 78", "sector": "III", "osm_id": "respaldo/via-5", "tipo_via": "primary", "estado": "bueno" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [[-74.1615, 4.6305], [-74.1605, 4.6302], [-74.1595, 4.6299]] },
+      "properties": { "id": null, "nombre": "Calle 36 Sur", "sector": "III", "osm_id": "respaldo/via-6", "tipo_via": "residential", "estado": "regular" }
+    }
+  ]
+}

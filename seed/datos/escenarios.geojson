@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "name": "escenarios_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.1698, 4.6252] },
+      "properties": { "id": null, "nombre": "Cancha El Paraíso", "sector": "I", "osm_id": "respaldo/esc-1", "tipo_escenario": "cancha" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.1678, 4.6284] },
+      "properties": { "id": null, "nombre": "Parque Recreativo Chucua I", "sector": "I", "osm_id": "respaldo/esc-2", "tipo_escenario": "parque" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.1658, 4.627] },
+      "properties": { "id": null, "nombre": "Cancha Central Sector II", "sector": "II", "osm_id": "respaldo/esc-3", "tipo_escenario": "cancha" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.164, 4.6302] },
+      "properties": { "id": null, "nombre": "Gimnasio Comunitario", "sector": "II", "osm_id": "respaldo/esc-4", "tipo_escenario": "gimnasio" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.1618, 4.6248] },
+      "properties": { "id": null, "nombre": "Cancha La Vaca", "sector": "III", "osm_id": "respaldo/esc-5", "tipo_escenario": "cancha" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.1598, 4.631] },
+      "properties": { "id": null, "nombre": "Zona Deportiva Este", "sector": "III", "osm_id": "respaldo/esc-6", "tipo_escenario": "polideportivo" }
+    }
+  ]
+}
