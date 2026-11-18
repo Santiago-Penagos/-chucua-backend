@@ -1,6 +1,12 @@
 from collections import Counter
 
-from chucua_backend.geografia import LIMITES_BARRIO, SECTORES, anillo_sector, contiene_punto
+from chucua_backend.geografia import (
+    LIMITES_BARRIO,
+    POLIGONO_BARRIO,
+    SECTORES,
+    anillo_sector,
+    contiene_punto,
+)
 
 from seed.constructores import DOMINIOS
 from seed.respaldo import cargar_dominio
@@ -27,10 +33,14 @@ def _area_grados(anillo) -> float:
 
 
 def test_sectores_contiguos_cubren_el_barrio_sin_solape():
-    ancho = LIMITES_BARRIO["oriente"] - LIMITES_BARRIO["occidente"]
-    alto = LIMITES_BARRIO["norte"] - LIMITES_BARRIO["sur"]
+    assert LIMITES_BARRIO == {
+        "norte": 4.6318,
+        "sur": 4.6238,
+        "occidente": -74.1695,
+        "oriente": -74.1615,
+    }
     total = sum(_area_grados(anillo_sector(sector)) for sector in SECTORES)
-    assert abs(total - ancho * alto) < 1e-12
+    assert abs(total - _area_grados(POLIGONO_BARRIO)) < 1e-12
     assert len({anillo_sector(sector)[0] for sector in SECTORES}) == 3
 
 

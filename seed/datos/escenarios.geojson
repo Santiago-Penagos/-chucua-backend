@@ -2,11 +2,11 @@
   "type": "FeatureCollection",
   "name": "escenarios_respaldo",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1621, 4.6215]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector I", "sector": "I", "osm_id": "respaldo/esc-1", "tipo_escenario": "cancha"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1614, 4.621]}, "properties": {"id": null, "nombre": "Parque Infantil Ronda Norte", "sector": "I", "osm_id": "respaldo/esc-2", "tipo_escenario": "parque"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1613, 4.6183]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector II", "sector": "II", "osm_id": "respaldo/esc-3", "tipo_escenario": "cancha"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1609, 4.6194]}, "properties": {"id": null, "nombre": "Polideportivo Central Chucua", "sector": "II", "osm_id": "respaldo/esc-4", "tipo_escenario": "polideportivo"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1612, 4.6153]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector III", "sector": "III", "osm_id": "respaldo/esc-5", "tipo_escenario": "cancha"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1606, 4.6167]}, "properties": {"id": null, "nombre": "Parque Vecinal Ronda Sur", "sector": "III", "osm_id": "respaldo/esc-6", "tipo_escenario": "parque"}}
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168849, 4.6305]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector I", "sector": "I", "osm_id": "respaldo/esc-1", "tipo_escenario": "cancha"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168198, 4.63]}, "properties": {"id": null, "nombre": "Parque Infantil Ronda Norte", "sector": "I", "osm_id": "respaldo/esc-2", "tipo_escenario": "parque"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168105, 4.6273]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector II", "sector": "II", "osm_id": "respaldo/esc-3", "tipo_escenario": "cancha"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167733, 4.6284]}, "properties": {"id": null, "nombre": "Polideportivo Central Chucua", "sector": "II", "osm_id": "respaldo/esc-4", "tipo_escenario": "polideportivo"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168012, 4.6243]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector III", "sector": "III", "osm_id": "respaldo/esc-5", "tipo_escenario": "cancha"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167453, 4.6257]}, "properties": {"id": null, "nombre": "Parque Vecinal Ronda Sur", "sector": "III", "osm_id": "respaldo/esc-6", "tipo_escenario": "parque"}}
   ]
 }

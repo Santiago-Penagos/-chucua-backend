@@ -12,15 +12,15 @@ from seed.sectores import clasificar_sector, sector_de_coordenadas
 @pytest.mark.parametrize(
     "longitud,latitud,sector",
     [
-        (-74.1620, 4.6225, "I"),
-        (-74.1610, 4.6215, "I"),
-        (-74.1550, 4.6210, "I"),
-        (-74.1620, 4.6180, "II"),
-        (-74.1600, 4.6190, "II"),
-        (-74.1550, 4.6190, "II"),
-        (-74.1620, 4.6170, "III"),
-        (-74.1580, 4.6160, "III"),
-        (-74.1550, 4.6150, "III"),
+        (-74.1680, 4.6305, "I"),
+        (-74.1650, 4.6309, "I"),
+        (-74.1640, 4.6295, "I"),
+        (-74.1670, 4.6280, "II"),
+        (-74.1640, 4.6270, "II"),
+        (-74.1632, 4.6285, "II"),
+        (-74.1680, 4.6250, "III"),
+        (-74.1650, 4.6245, "III"),
+        (-74.1625, 4.6260, "III"),
     ],
 )
 def test_clasificacion_dentro_de_los_poligonos(longitud, latitud, sector):
@@ -28,25 +28,25 @@ def test_clasificacion_dentro_de_los_poligonos(longitud, latitud, sector):
 
 
 def test_clasificacion_repetible():
-    primera = clasificar_sector(-74.1600, 4.6190)
-    segunda = clasificar_sector(-74.1600, 4.6190)
+    primera = clasificar_sector(-74.1650, 4.6280)
+    segunda = clasificar_sector(-74.1650, 4.6280)
     assert primera == segunda == "II"
 
 
 def test_punto_fuera_del_barrio_falla():
     with pytest.raises(ErrorValidacion):
-        clasificar_sector(-74.1700, 4.6250)
+        clasificar_sector(-74.1700, 4.6280)
     with pytest.raises(ErrorValidacion):
         clasificar_sector(-74.1600, 4.6300)
 
 
 def test_sector_de_varios_vertices_usa_el_promedio():
-    assert sector_de_coordenadas([(-74.1610, 4.6212), (-74.1614, 4.6216)]) == "I"
+    assert sector_de_coordenadas([(-74.1680, 4.6302), (-74.1684, 4.6306)]) == "I"
 
 
 def test_geometria_que_sale_del_barrio_falla():
     with pytest.raises(ErrorValidacion):
-        sector_de_coordenadas([(-74.1610, 4.6212), (-74.1700, 4.6250)])
+        sector_de_coordenadas([(-74.1680, 4.6302), (-74.1700, 4.6280)])
 
 
 def test_sin_coordenadas_falla():

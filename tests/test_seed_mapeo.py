@@ -5,8 +5,8 @@ def test_escuela_se_convierte_en_centro_educativo():
     elemento = {
         "type": "node",
         "id": 10,
-        "lat": 4.6215,
-        "lon": -74.1610,
+        "lat": 4.6305,
+        "lon": -74.1680,
         "tags": {"name": "Colegio X", "amenity": "school", "operator:type": "public"},
     }
     entidad = mapear_educativo(elemento)
@@ -22,10 +22,10 @@ def test_edificacion_se_convierte_en_catastro():
         "type": "way",
         "id": 20,
         "geometry": [
-            {"lat": 4.6212, "lon": -74.1617},
-            {"lat": 4.6212, "lon": -74.1611},
-            {"lat": 4.6217, "lon": -74.1611},
-            {"lat": 4.6217, "lon": -74.1617},
+            {"lat": 4.6302, "lon": -74.1687},
+            {"lat": 4.6302, "lon": -74.1681},
+            {"lat": 4.6307, "lon": -74.1681},
+            {"lat": 4.6307, "lon": -74.1687},
         ],
         "tags": {"building": "yes"},
     }
@@ -41,9 +41,9 @@ def test_via_sin_estado_usa_sin_evaluar():
         "type": "way",
         "id": 30,
         "geometry": [
-            {"lat": 4.6190, "lon": -74.1600},
-            {"lat": 4.6192, "lon": -74.1595},
-            {"lat": 4.6194, "lon": -74.1590},
+            {"lat": 4.6270, "lon": -74.1660},
+            {"lat": 4.6272, "lon": -74.1655},
+            {"lat": 4.6274, "lon": -74.1650},
         ],
         "tags": {"highway": "residential"},
     }
@@ -54,7 +54,7 @@ def test_via_sin_estado_usa_sin_evaluar():
 
 
 def test_elemento_sin_nombre_recibe_nombre_descriptivo():
-    elemento = {"type": "node", "id": 40, "lat": 4.6160, "lon": -74.1590, "tags": {}}
+    elemento = {"type": "node", "id": 40, "lat": 4.6308, "lon": -74.1685, "tags": {}}
     entidad = mapear_escenario(elemento)
     assert "40" in entidad.nombre
     assert "way/" not in entidad.nombre

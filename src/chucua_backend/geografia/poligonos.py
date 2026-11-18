@@ -5,46 +5,44 @@ from ..dominio.geometria import Coordenada
 SECTORES = ("I", "II", "III")
 
 LIMITES_BARRIO = {
-    "norte": 4.6228,
-    "sur": 4.6148,
-    "occidente": -74.1628,
-    "oriente": -74.1542,
+    "norte": 4.6318,
+    "sur": 4.6238,
+    "occidente": -74.1695,
+    "oriente": -74.1615,
 }
 
-POLIGONO_BARRIO: tuple[Coordenada, ...] = (
-    (-74.1628, 4.6228),
-    (-74.1542, 4.6228),
-    (-74.1542, 4.6148),
-    (-74.1628, 4.6148),
-    (-74.1628, 4.6228),
-)
+ORIENTE_NORTE = -74.1638
+PENDIENTE_ORIENTE = (
+    LIMITES_BARRIO["oriente"] - ORIENTE_NORTE
+) / (LIMITES_BARRIO["sur"] - LIMITES_BARRIO["norte"])
+
+BANDAS_SECTOR = {
+    "I": (4.6292, 4.6318),
+    "II": (4.6265, 4.6292),
+    "III": (4.6238, 4.6265),
+}
+
+
+def longitud_oriente(latitud: float) -> float:
+    """Longitud del eje de la Av. Agoberto Mejía / Carrera 80."""
+    return ORIENTE_NORTE + (latitud - LIMITES_BARRIO["norte"]) * PENDIENTE_ORIENTE
+
+
+def _anillo(sur: float, norte: float) -> tuple[Coordenada, ...]:
+    occidente = LIMITES_BARRIO["occidente"]
+    return (
+        (occidente, sur),
+        (longitud_oriente(sur), sur),
+        (longitud_oriente(norte), norte),
+        (occidente, norte),
+        (occidente, sur),
+    )
+
+
+POLIGONO_BARRIO = _anillo(LIMITES_BARRIO["sur"], LIMITES_BARRIO["norte"])
 
 ANILLOS: dict[str, tuple[Coordenada, ...]] = {
-    "I": (
-        (-74.1628, 4.6228),
-        (-74.1542, 4.6228),
-        (-74.1542, 4.6206),
-        (-74.1592, 4.6202),
-        (-74.1628, 4.6206),
-        (-74.1628, 4.6228),
-    ),
-    "II": (
-        (-74.1628, 4.6206),
-        (-74.1592, 4.6202),
-        (-74.1542, 4.6206),
-        (-74.1542, 4.6178),
-        (-74.1592, 4.6174),
-        (-74.1628, 4.6178),
-        (-74.1628, 4.6206),
-    ),
-    "III": (
-        (-74.1628, 4.6178),
-        (-74.1592, 4.6174),
-        (-74.1542, 4.6178),
-        (-74.1542, 4.6148),
-        (-74.1628, 4.6148),
-        (-74.1628, 4.6178),
-    ),
+    sector: _anillo(*BANDAS_SECTOR[sector]) for sector in SECTORES
 }
 
 NOMBRES = {
@@ -54,9 +52,9 @@ NOMBRES = {
 }
 
 DESCRIPCIONES = {
-    "I": "Zona norte y occidental, entre Calle 38C Sur y la ronda norte del humedal.",
-    "II": "Zona central de equipamientos sobre el eje Calle 42 Sur y Carrera 81.",
-    "III": "Zona sur y oriental, entre parques vecinales y la ronda sur del humedal.",
+    "I": "Entre la Calle 38C Sur, el borde sur de Corabastos y la ronda norte del humedal.",
+    "II": "Zona central sobre el eje Calle 41F Sur / Calle 42 Sur y las carreras 81A a 84.",
+    "III": "Zona sur entre la Calle 42F Sur y la ronda sur del Humedal La Vaca.",
 }
 
 
