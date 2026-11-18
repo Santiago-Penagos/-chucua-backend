@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "cultura_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.169,
+          4.6252
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Casa de la Cultura Chucua",
+        "sector": "I",
+        "osm_id": "respaldo/cultura-1",
+        "tipo_espacio": "casa_cultura",
+        "actividad_principal": "Talleres de arte y música",
+        "direccion": "Calle 38 Sur # 79-60",
+        "aforo_aproximado": 120
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1675,
+          4.6284
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Iglesia San José",
+        "sector": "I",
+        "osm_id": "respaldo/cultura-2",
+        "tipo_espacio": "iglesia",
+        "actividad_principal": "Celebraciones religiosas",
+        "direccion": "Carrera 80 # 39-05",
+        "aforo_aproximado": 200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1658,
+          4.627
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Centro Comunitario Central",
+        "sector": "II",
+        "osm_id": "respaldo/cultura-3",
+        "tipo_espacio": "salon_comunal",
+        "actividad_principal": "Reuniones y talleres barriales",
+        "direccion": "Calle 40 Sur # 78-40",
+        "aforo_aproximado": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.164,
+          4.6302
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Salón de Danza Los Comuneros",
+        "sector": "II",
+        "osm_id": "respaldo/cultura-4",
+        "tipo_espacio": "salon_comunal",
+        "actividad_principal": "Ensayo de danza folclórica",
+        "direccion": "Carrera 77 # 41-55",
+        "aforo_aproximado": 45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1618,
+          4.6248
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Biblioteca Popular La Vaca",
+        "sector": "III",
+        "osm_id": "respaldo/cultura-5",
+        "tipo_espacio": "biblioteca",
+        "actividad_principal": "Lectura y refuerzo escolar",
+        "direccion": "Calle 42 Sur # 76-25",
+        "aforo_aproximado": 60
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1602,
+          4.631
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Capilla La Vaca",
+        "sector": "III",
+        "osm_id": "respaldo/cultura-6",
+        "tipo_espacio": "iglesia",
+        "actividad_principal": "Oración y catequesis",
+        "direccion": "Carrera 75 # 43-35",
+        "aforo_aproximado": 90
+      }
+    }
+  ]
+}

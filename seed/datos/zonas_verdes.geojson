@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "zonas_verdes_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.169,
+          4.6252
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Parque El Paraíso",
+        "sector": "I",
+        "osm_id": "respaldo/zonas_verdes-1",
+        "area_aprox_m2": 3200.0,
+        "tipo_vegetacion": "arboles_nativos",
+        "estado_mantenimiento": "bueno",
+        "direccion": "Calle 38 Sur # 79-70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1675,
+          4.6284
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Zona Verde La Esperanza",
+        "sector": "I",
+        "osm_id": "respaldo/zonas_verdes-2",
+        "area_aprox_m2": 1450.0,
+        "tipo_vegetacion": "mixta",
+        "estado_mantenimiento": "regular",
+        "direccion": "Carrera 80 # 39-65"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1658,
+          4.627
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Parque Central Chucua",
+        "sector": "II",
+        "osm_id": "respaldo/zonas_verdes-3",
+        "area_aprox_m2": 5100.0,
+        "tipo_vegetacion": "jardines",
+        "estado_mantenimiento": "bueno",
+        "direccion": "Calle 40 Sur # 78-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.164,
+          4.6302
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Jardín Comunitario Los Comuneros",
+        "sector": "II",
+        "osm_id": "respaldo/zonas_verdes-4",
+        "area_aprox_m2": 860.0,
+        "tipo_vegetacion": "arboles_nativos",
+        "estado_mantenimiento": "regular",
+        "direccion": "Carrera 77 # 41-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1618,
+          4.6248
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Parque La Vaca",
+        "sector": "III",
+        "osm_id": "respaldo/zonas_verdes-5",
+        "area_aprox_m2": 2700.0,
+        "tipo_vegetacion": "pasto",
+        "estado_mantenimiento": "malo",
+        "direccion": "Calle 42 Sur # 76-60"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1602,
+          4.631
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Ronda Verde III",
+        "sector": "III",
+        "osm_id": "respaldo/zonas_verdes-6",
+        "area_aprox_m2": 1980.0,
+        "tipo_vegetacion": "mixta",
+        "estado_mantenimiento": "bueno",
+        "direccion": "Carrera 75 # 43-50"
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "demografia_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.169,
+          4.6252
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Sector I - Manzana 12",
+        "sector": "I",
+        "osm_id": "respaldo/demografia-1",
+        "poblacion_estimada": 420,
+        "hogares_aprox": 120,
+        "grupo_etario_predominante": "adultos",
+        "anio_censo": 2024
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1675,
+          4.6284
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Sector I - Manzana 18",
+        "sector": "I",
+        "osm_id": "respaldo/demografia-2",
+        "poblacion_estimada": 380,
+        "hogares_aprox": 105,
+        "grupo_etario_predominante": "adultos_mayores",
+        "anio_censo": 2024
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1658,
+          4.627
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Sector II - Manzana 07",
+        "sector": "II",
+        "osm_id": "respaldo/demografia-3",
+        "poblacion_estimada": 510,
+        "hogares_aprox": 150,
+        "grupo_etario_predominante": "jovenes",
+        "anio_censo": 2024
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.164,
+          4.6302
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Sector II - Manzana 14",
+        "sector": "II",
+        "osm_id": "respaldo/demografia-4",
+        "poblacion_estimada": 465,
+        "hogares_aprox": 132,
+        "grupo_etario_predominante": "adultos",
+        "anio_censo": 2024
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1618,
+          4.6248
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Sector III - Manzana 03",
+        "sector": "III",
+        "osm_id": "respaldo/demografia-5",
+        "poblacion_estimada": 590,
+        "hogares_aprox": 168,
+        "grupo_etario_predominante": "ninos",
+        "anio_censo": 2024
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1602,
+          4.631
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Sector III - Manzana 09",
+        "sector": "III",
+        "osm_id": "respaldo/demografia-6",
+        "poblacion_estimada": 445,
+        "hogares_aprox": 126,
+        "grupo_etario_predominante": "mixto",
+        "anio_censo": 2024
+      }
+    }
+  ]
+}

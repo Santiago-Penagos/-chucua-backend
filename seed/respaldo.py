@@ -1,35 +1,23 @@
 import json
 from pathlib import Path
 
-from chucua_backend.dominio.catastro import InformacionCatastral
-from chucua_backend.dominio.educativo import CentroEducativo
-from chucua_backend.dominio.escenario import EscenarioDeportivo
 from chucua_backend.dominio.geometria_parser import desde_geojson
-from chucua_backend.dominio.via import EstadoVia
+
+from .constructores import DOMINIOS, ESPECIFICACIONES
 
 RUTA_DATOS = Path(__file__).resolve().parent / "datos"
 
 
 def _entidad(dominio: str, feature: dict):
+    clase, campos = ESPECIFICACIONES[dominio]
     props = feature.get("properties") or {}
-    base = {
-        "nombre": props["nombre"],
-        "sector": props["sector"],
-        "geometria": desde_geojson(feature["geometry"]),
-        "osm_id": props.get("osm_id"),
-    }
-    if dominio == "escenarios":
-        return EscenarioDeportivo(**base, tipo_escenario=props["tipo_escenario"])
-    if dominio == "educativos":
-        return CentroEducativo(
-            **base,
-            nivel_educativo=props["nivel_educativo"],
-            naturaleza=props["naturaleza"],
-        )
-    if dominio == "vias":
-        return EstadoVia(**base, tipo_via=props["tipo_via"], estado=props["estado"])
-    return InformacionCatastral(
-        **base, uso_suelo=props["uso_suelo"], area_m2=props["area_m2"]
+    atributos = {campo: props[campo] for campo in campos}
+    return clase(
+        nombre=props["nombre"],
+        sector=props["sector"],
+        geometria=desde_geojson(feature["geometry"]),
+        osm_id=props.get("osm_id"),
+        **atributos,
     )
 
 
@@ -41,7 +29,4 @@ def cargar_dominio(dominio: str) -> list:
 
 
 def cargar_todo() -> dict[str, list]:
-    return {
-        dominio: cargar_dominio(dominio)
-        for dominio in ("escenarios", "educativos", "vias", "catastro")
-    }
+    return {dominio: cargar_dominio(dominio) for dominio in DOMINIOS}

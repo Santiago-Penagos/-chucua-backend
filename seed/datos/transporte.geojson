@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "transporte_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.169,
+          4.6252
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Paradero SITP El Paraíso",
+        "sector": "I",
+        "osm_id": "respaldo/transporte-1",
+        "codigo_paradero": "SITP-001",
+        "rutas_alimentadoras": "7-1, 7-2, 16-4",
+        "direccion": "Calle 38 Sur # 79-30",
+        "estado_senalizacion": "buena"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1675,
+          4.6284
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Paradero SITP Carrera 80",
+        "sector": "I",
+        "osm_id": "respaldo/transporte-2",
+        "codigo_paradero": "SITP-002",
+        "rutas_alimentadoras": "7-3, 16-1",
+        "direccion": "Carrera 80 # 39-55",
+        "estado_senalizacion": "regular"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1658,
+          4.627
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Paradero SITP Central",
+        "sector": "II",
+        "osm_id": "respaldo/transporte-3",
+        "codigo_paradero": "SITP-003",
+        "rutas_alimentadoras": "16-2, 16-5, 18-1",
+        "direccion": "Calle 40 Sur # 78-25",
+        "estado_senalizacion": "buena"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.164,
+          4.6302
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Paradero SITP Los Comuneros",
+        "sector": "II",
+        "osm_id": "respaldo/transporte-4",
+        "codigo_paradero": "SITP-004",
+        "rutas_alimentadoras": "18-3, 22-1",
+        "direccion": "Carrera 77 # 41-08",
+        "estado_senalizacion": "mala"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1618,
+          4.6248
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Paradero SITP La Vaca",
+        "sector": "III",
+        "osm_id": "respaldo/transporte-5",
+        "codigo_paradero": "SITP-005",
+        "rutas_alimentadoras": "22-2, 22-4",
+        "direccion": "Calle 42 Sur # 76-50",
+        "estado_senalizacion": "regular"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1602,
+          4.631
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Paradero SITP Nuevo Amanecer",
+        "sector": "III",
+        "osm_id": "respaldo/transporte-6",
+        "codigo_paradero": "SITP-006",
+        "rutas_alimentadoras": "22-5, 26-1",
+        "direccion": "Carrera 75 # 43-22",
+        "estado_senalizacion": "sin_senalizacion"
+      }
+    }
+  ]
+}

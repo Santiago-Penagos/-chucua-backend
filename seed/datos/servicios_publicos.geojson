@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "name": "servicios_publicos_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.169,
+          4.6252
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "PTAP Chucua",
+        "sector": "I",
+        "osm_id": "respaldo/servicios_publicos-1",
+        "tipo_servicio": "acueducto",
+        "estado_operativo": "operativo",
+        "ubicacion_referencia": "Costado occidental del barrio, junto al humedal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1675,
+          4.6284
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Subestación Eléctrica I",
+        "sector": "I",
+        "osm_id": "respaldo/servicios_publicos-2",
+        "tipo_servicio": "energia",
+        "estado_operativo": "operativo",
+        "ubicacion_referencia": "Carrera 80 con Calle 39 Sur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1658,
+          4.627
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Estación de Bombeo Central",
+        "sector": "II",
+        "osm_id": "respaldo/servicios_publicos-3",
+        "tipo_servicio": "alcantarillado",
+        "estado_operativo": "mantenimiento",
+        "ubicacion_referencia": "Calle 40 Sur # 78-55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.164,
+          4.6302
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Punto Limpio Los Comuneros",
+        "sector": "II",
+        "osm_id": "respaldo/servicios_publicos-4",
+        "tipo_servicio": "aseo",
+        "estado_operativo": "operativo",
+        "ubicacion_referencia": "Carrera 77 # 41-70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1618,
+          4.6248
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Tanque La Vaca",
+        "sector": "III",
+        "osm_id": "respaldo/servicios_publicos-5",
+        "tipo_servicio": "acueducto",
+        "estado_operativo": "operativo",
+        "ubicacion_referencia": "Zona alta del Sector III"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1602,
+          4.631
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Punto de Recolección III",
+        "sector": "III",
+        "osm_id": "respaldo/servicios_publicos-6",
+        "tipo_servicio": "aseo",
+        "estado_operativo": "fuera_servicio",
+        "ubicacion_referencia": "Carrera 75 con Calle 43 Sur"
+      }
+    }
+  ]
+}

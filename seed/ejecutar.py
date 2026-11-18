@@ -3,25 +3,13 @@ import json
 
 from chucua_backend.db.conexion import conectar
 from chucua_backend.errores import ErrorValidacion
-from chucua_backend.repositorios.catastro import RepositorioCatastro
-from chucua_backend.repositorios.educativos import RepositorioEducativos
-from chucua_backend.repositorios.escenarios import RepositorioEscenarios
-from chucua_backend.repositorios.vias import RepositorioVias
 
 from . import overpass, respaldo
+from .constructores import DOMINIOS
+from .fuentes import DOMINIOS_OVERPASS, crear_repositorios
 from .mapeo import mapear
 
-DOMINIOS = ("escenarios", "educativos", "vias", "catastro")
 SECTORES = ("I", "II", "III")
-
-
-def _repositorios(conexion) -> dict:
-    return {
-        "escenarios": RepositorioEscenarios(conexion),
-        "educativos": RepositorioEducativos(conexion),
-        "vias": RepositorioVias(conexion),
-        "catastro": RepositorioCatastro(conexion),
-    }
 
 
 def _mapear_elementos(dominio: str, elementos: list[dict]) -> list:
@@ -38,12 +26,13 @@ def sembrar(
     fuente: str = "auto", conexion=None, usar_red: bool = True, opciones_overpass=None
 ) -> dict:
     conexion = conexion or conectar()
-    repositorios = _repositorios(conexion)
+    repositorios = crear_repositorios(conexion)
     opciones_overpass = opciones_overpass or {}
     detalle_fuente: dict[str, str] = {}
     for dominio in DOMINIOS:
         entidades: list = []
-        if fuente in ("auto", "overpass") and usar_red:
+        consulta_red = dominio in DOMINIOS_OVERPASS
+        if fuente in ("auto", "overpass") and usar_red and consulta_red:
             elementos = overpass.consultar(dominio, **opciones_overpass)
             entidades = _mapear_elementos(dominio, elementos)
             detalle_fuente[dominio] = "overpass" if entidades else "respaldo"
@@ -62,7 +51,8 @@ def _reporte(fuente: str, detalle: dict[str, str], repositorios: dict) -> dict:
         for entidad in repositorios[dominio].listar():
             por_sector[entidad.sector] += 1
     total = sum(por_dominio.values())
-    usada = "overpass" if all(valor == "overpass" for valor in detalle.values()) else "respaldo"
+    todo_overpass = detalle and all(v == "overpass" for v in detalle.values())
+    usada = "overpass" if todo_overpass else "respaldo"
     return {
         "fuente": usada if fuente != "respaldo" else "respaldo",
         "detalle_fuente": detalle,

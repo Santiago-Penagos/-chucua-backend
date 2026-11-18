@@ -1,3 +1,4 @@
+from seed.constructores import DOMINIOS
 from seed.respaldo import cargar_dominio, cargar_todo
 
 TIPOS = {
@@ -5,12 +6,22 @@ TIPOS = {
     "educativos": "Point",
     "vias": "LineString",
     "catastro": "Polygon",
+    "jac": "Point",
+    "centros_salud": "Point",
+    "seguridad": "Point",
+    "humedal_puntos": "Point",
+    "transporte": "Point",
+    "comercio": "Point",
+    "cultura": "Point",
+    "servicios_publicos": "Point",
+    "zonas_verdes": "Point",
+    "demografia": "Point",
 }
 
 
-def test_respaldo_cubre_los_cuatro_dominios():
+def test_respaldo_cubre_los_catorce_dominios():
     datos = cargar_todo()
-    assert set(datos) == set(TIPOS)
+    assert set(datos) == set(DOMINIOS) == set(TIPOS)
     for dominio, entidades in datos.items():
         assert len(entidades) >= 3
         assert {e.sector for e in entidades} == {"I", "II", "III"}

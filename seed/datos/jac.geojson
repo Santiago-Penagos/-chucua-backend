@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "name": "jac_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.169,
+          4.6252
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "JAC El Paraíso",
+        "sector": "I",
+        "osm_id": "respaldo/jac-1",
+        "presidente_contacto": "Luz Marina Gómez · 310 555 1010",
+        "direccion": "Calle 38 Sur # 79-12",
+        "horario_atencion": "Sábados 9:00 a.m. - 12:00 m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1675,
+          4.6284
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "JAC La Esperanza",
+        "sector": "I",
+        "osm_id": "respaldo/jac-2",
+        "presidente_contacto": "Jorge Enrique Ruiz · 311 555 2020",
+        "direccion": "Carrera 80 # 39-45",
+        "horario_atencion": "Domingos 8:00 a.m. - 11:00 a.m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1658,
+          4.627
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "JAC Central Chucua",
+        "sector": "II",
+        "osm_id": "respaldo/jac-3",
+        "presidente_contacto": "Marta Lucía Pérez · 312 555 3030",
+        "direccion": "Calle 40 Sur # 78-20",
+        "horario_atencion": "Martes y jueves 6:00 p.m. - 8:00 p.m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.164,
+          4.6302
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "JAC Los Comuneros",
+        "sector": "II",
+        "osm_id": "respaldo/jac-4",
+        "presidente_contacto": "Carlos Andrés Mora · 313 555 4040",
+        "direccion": "Carrera 77 # 41-18",
+        "horario_atencion": "Sábados 2:00 p.m. - 5:00 p.m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1618,
+          4.6248
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "JAC La Vaca",
+        "sector": "III",
+        "osm_id": "respaldo/jac-5",
+        "presidente_contacto": "Nidia Esperanza Torres · 314 555 5050",
+        "direccion": "Calle 42 Sur # 76-33",
+        "horario_atencion": "Miércoles 6:30 p.m. - 8:30 p.m."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1602,
+          4.631
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "JAC Nuevo Amanecer",
+        "sector": "III",
+        "osm_id": "respaldo/jac-6",
+        "presidente_contacto": "Álvaro Yesid Cárdenas · 315 555 6060",
+        "direccion": "Carrera 75 # 43-07",
+        "horario_atencion": "Domingos 9:00 a.m. - 12:00 m."
+      }
+    }
+  ]
+}

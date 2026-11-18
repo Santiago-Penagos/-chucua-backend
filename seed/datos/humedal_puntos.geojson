@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "name": "humedal_puntos_respaldo",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.169,
+          4.6252
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Sendero Humedal Norte",
+        "sector": "I",
+        "osm_id": "respaldo/humedal_puntos-1",
+        "zona_humedal": "ronda_norte",
+        "estado_conservacion": "bueno",
+        "especie_destacada": "Tingua de pico verde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1675,
+          4.6284
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Observatorio de Aves El Paraíso",
+        "sector": "I",
+        "osm_id": "respaldo/humedal_puntos-2",
+        "zona_humedal": "ronda_norte",
+        "estado_conservacion": "en_recuperacion",
+        "especie_destacada": "Monjita bogotana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1658,
+          4.627
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Mirador La Vaca",
+        "sector": "II",
+        "osm_id": "respaldo/humedal_puntos-3",
+        "zona_humedal": "cuerpo_agua",
+        "estado_conservacion": "regular",
+        "especie_destacada": "Junco bogotano"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.164,
+          4.6302
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Zona de Recuperación Central",
+        "sector": "II",
+        "osm_id": "respaldo/humedal_puntos-4",
+        "zona_humedal": "zona_recuperacion",
+        "estado_conservacion": "en_recuperacion",
+        "especie_destacada": "Aliso"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1618,
+          4.6248
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Punto de Siembra III",
+        "sector": "III",
+        "osm_id": "respaldo/humedal_puntos-5",
+        "zona_humedal": "ronda_sur",
+        "estado_conservacion": "bueno",
+        "especie_destacada": "Arrayán"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1602,
+          4.631
+        ]
+      },
+      "properties": {
+        "id": null,
+        "nombre": "Aula Ambiental La Vaca",
+        "sector": "III",
+        "osm_id": "respaldo/humedal_puntos-6",
+        "zona_humedal": "ronda_sur",
+        "estado_conservacion": "critico",
+        "especie_destacada": "Rana verde"
+      }
+    }
+  ]
+}

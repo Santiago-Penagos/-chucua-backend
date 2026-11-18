@@ -3,17 +3,19 @@ import sqlite3
 import pytest
 
 from chucua_backend.db.conexion import conectar
+from chucua_backend.db.esquema import COLUMNAS
 
 GEOMETRIA = '{"type": "Point", "coordinates": [-74.16, 4.62]}'
 
 
-def test_crea_las_cuatro_tablas(tmp_path):
+def test_crea_las_catorce_tablas(tmp_path):
     base = conectar(tmp_path / "x.db")
     tablas = {
         fila["name"]
         for fila in base.execute("SELECT name FROM sqlite_master WHERE type='table'")
     }
-    assert {"escenarios", "educativos", "vias", "catastro"} <= tablas
+    assert set(COLUMNAS) <= tablas
+    assert len(COLUMNAS) == 14
     base.close()
 
 
