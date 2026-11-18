@@ -1,0 +1,9 @@
+{
+  "type": "FeatureCollection",
+  "name": "sectores_barrio",
+  "features": [
+    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.1628, 4.6228], [-74.1542, 4.6228], [-74.1542, 4.6206], [-74.1592, 4.6202], [-74.1628, 4.6206], [-74.1628, 4.6228]]]}, "properties": {"sector": "I", "nombre": "Sector I - Ronda Norte del Humedal La Vaca", "descripcion": "Zona norte y occidental, entre Calle 38C Sur y la ronda norte del humedal."}},
+    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.1628, 4.6206], [-74.1592, 4.6202], [-74.1542, 4.6206], [-74.1542, 4.6178], [-74.1592, 4.6174], [-74.1628, 4.6178], [-74.1628, 4.6206]]]}, "properties": {"sector": "II", "nombre": "Sector II - Equipamientos y Calle 42 Sur", "descripcion": "Zona central de equipamientos sobre el eje Calle 42 Sur y Carrera 81."}},
+    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.1628, 4.6178], [-74.1592, 4.6174], [-74.1542, 4.6178], [-74.1542, 4.6148], [-74.1628, 4.6148], [-74.1628, 4.6178]]]}, "properties": {"sector": "III", "nombre": "Sector III - Parques Vecinales y Ronda Sur", "descripcion": "Zona sur y oriental, entre parques vecinales y la ronda sur del humedal."}}
+  ]
+}

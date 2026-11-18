@@ -12,9 +12,13 @@ def etiquetas(elemento: dict) -> dict:
 
 def nombre(elemento: dict, defecto: str) -> str:
     valor = etiquetas(elemento).get("name")
-    if isinstance(valor, str) and valor.strip():
+    if (
+        isinstance(valor, str)
+        and valor.strip()
+        and not valor.startswith(("way/", "node/", "relation/"))
+    ):
         return valor.strip()
-    return f"{defecto} {osm_id(elemento)}"
+    return f"{defecto} Chucua de la Vaca {elemento['id']}"
 
 
 def punto(elemento: dict) -> Punto:

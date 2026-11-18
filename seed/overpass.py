@@ -5,7 +5,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 URL = "https://overpass-api.de/api/interpreter"
-BBOX = (4.6235, -74.1705, 4.6335, -74.1590)
+BBOX = (4.6148, -74.1628, 4.6228, -74.1542)
 
 CONSULTAS = {
     "escenarios": (

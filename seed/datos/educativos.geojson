@@ -2,35 +2,11 @@
   "type": "FeatureCollection",
   "name": "educativos_respaldo",
   "features": [
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.1695, 4.6264] },
-      "properties": { "id": null, "nombre": "Colegio Distrital Chucua I", "sector": "I", "osm_id": "respaldo/edu-1", "nivel_educativo": "basica", "naturaleza": "publico" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.1675, 4.6296] },
-      "properties": { "id": null, "nombre": "Jardín Infantil Semillitas", "sector": "I", "osm_id": "respaldo/edu-2", "nivel_educativo": "preescolar", "naturaleza": "publico" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.1655, 4.6258] },
-      "properties": { "id": null, "nombre": "Colegio Chucua Central", "sector": "II", "osm_id": "respaldo/edu-3", "nivel_educativo": "basica", "naturaleza": "publico" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.1638, 4.6292] },
-      "properties": { "id": null, "nombre": "Instituto Técnico Kennedy", "sector": "II", "osm_id": "respaldo/edu-4", "nivel_educativo": "superior", "naturaleza": "privado" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.1616, 4.6266] },
-      "properties": { "id": null, "nombre": "Universidad Popular del Sur", "sector": "III", "osm_id": "respaldo/edu-5", "nivel_educativo": "superior", "naturaleza": "privado" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.1596, 4.63] },
-      "properties": { "id": null, "nombre": "Colegio Sector III", "sector": "III", "osm_id": "respaldo/edu-6", "nivel_educativo": "basica", "naturaleza": "publico" }
-    }
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1609, 4.622]}, "properties": {"id": null, "nombre": "IED San Jorge", "sector": "I", "osm_id": "respaldo/edu-1", "nivel_educativo": "basica", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1596, 4.6217]}, "properties": {"id": null, "nombre": "Jardín Infantil Ronda Norte", "sector": "I", "osm_id": "respaldo/edu-2", "nivel_educativo": "preescolar", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1606, 4.6186]}, "properties": {"id": null, "nombre": "Colegio Chucua Central", "sector": "II", "osm_id": "respaldo/edu-3", "nivel_educativo": "basica", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1599, 4.6197]}, "properties": {"id": null, "nombre": "Centro de Formación Cra. 81", "sector": "II", "osm_id": "respaldo/edu-4", "nivel_educativo": "superior", "naturaleza": "privado"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1598, 4.6158]}, "properties": {"id": null, "nombre": "IED Chucua de la Vaca Sur", "sector": "III", "osm_id": "respaldo/edu-5", "nivel_educativo": "basica", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.1593, 4.6166]}, "properties": {"id": null, "nombre": "Jardín Infantil Parques del Sur", "sector": "III", "osm_id": "respaldo/edu-6", "nivel_educativo": "preescolar", "naturaleza": "publico"}}
   ]
 }
