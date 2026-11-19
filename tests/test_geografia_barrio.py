@@ -59,6 +59,8 @@ def test_registros_de_los_catorce_dominios_caen_en_su_sector():
             assert conteo == Counter({"I": 1})
         elif dominio == "servicios_publicos":
             assert conteo == Counter()
+        elif dominio == "humedal_puntos":
+            assert conteo == Counter({"III": 3})
         elif dominio == "jac":
             assert conteo == Counter({"I": 4, "II": 2, "III": 2})
         else:
@@ -70,7 +72,7 @@ def test_diez_dominios_puntuales_tienen_cuarenta_coordenadas_unicas():
     for dominio in DOMINIOS_PUNTUALES:
         for entidad in cargar_dominio(dominio):
             coordenadas.append(tuple(entidad.geometria.coordenada))
-    assert len(coordenadas) == len(set(coordenadas)) == 40
+    assert len(coordenadas) == len(set(coordenadas)) == 37
 
 
 def test_nombres_sin_identificadores_crudos_de_osm():

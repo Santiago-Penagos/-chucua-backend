@@ -20,7 +20,7 @@ TIPOS = {
 
 
 TAMANOS = {"escenarios": 5, "educativos": 3, "jac": 8}
-SECTORES = {"escenarios": {"I"}, "educativos": {"I", "II"}, "jac": {"I", "II", "III"}, "centros_salud": set(), "seguridad": {"II"}, "cultura": {"I"}, "servicios_publicos": set()}
+SECTORES = {"escenarios": {"I"}, "educativos": {"I", "II"}, "jac": {"I", "II", "III"}, "centros_salud": set(), "seguridad": {"II"}, "cultura": {"I"}, "servicios_publicos": set(), "humedal_puntos": {"III"}}
 
 
 def test_respaldo_cubre_los_catorce_dominios():

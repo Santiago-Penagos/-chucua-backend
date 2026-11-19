@@ -1,12 +1,60 @@
 {
   "type": "FeatureCollection",
-  "name": "humedal_puntos_respaldo",
+  "name": "humedal_vaca_ideca",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.628314]}, "properties": {"id": null, "nombre": "Sendero Ronda Norte La Vaca", "sector": "I", "osm_id": "respaldo/humedal_puntos-1", "zona_humedal": "ronda_norte", "estado_conservacion": "bueno", "especie_destacada": "Tingua de pico verde"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.62855]}, "properties": {"id": null, "nombre": "Observatorio de Aves La Vaca Norte", "sector": "I", "osm_id": "respaldo/humedal_puntos-2", "zona_humedal": "ronda_norte", "estado_conservacion": "en_recuperacion", "especie_destacada": "Monjita bogotana"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167676, 4.628607]}, "properties": {"id": null, "nombre": "Mirador Ronda Occidental La Vaca", "sector": "II", "osm_id": "respaldo/humedal_puntos-3", "zona_humedal": "cuerpo_agua", "estado_conservacion": "regular", "especie_destacada": "Junco bogotano"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167676, 4.628816]}, "properties": {"id": null, "nombre": "Zona de Recuperación La Vaca Central", "sector": "II", "osm_id": "respaldo/humedal_puntos-4", "zona_humedal": "zona_recuperacion", "estado_conservacion": "en_recuperacion", "especie_destacada": "Aliso"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166235, 4.631183]}, "properties": {"id": null, "nombre": "Sendero Ronda Sur La Vaca", "sector": "III", "osm_id": "respaldo/humedal_puntos-5", "zona_humedal": "ronda_sur", "estado_conservacion": "bueno", "especie_destacada": "Arrayán"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166235, 4.631346]}, "properties": {"id": null, "nombre": "Aula Ambiental La Vaca Sur", "sector": "III", "osm_id": "respaldo/humedal_puntos-6", "zona_humedal": "ronda_sur", "estado_conservacion": "regular", "especie_destacada": "Rana verde"}}
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.162571,
+          4.628997
+        ]
+      },
+      "properties": {
+        "nombre": "Espejo de Agua Principal — PEDH La Vaca Norte (IDECA Capa 12)",
+        "sector": "III",
+        "zona_humedal": "espejo_de_agua",
+        "estado_conservacion": "en_restauracion_ecologica",
+        "especie_destacada": "Tingua azul (Porphyrio martinica) y Junco bogotano",
+        "osm_id": "ideca/humedal-vaca-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16318,
+          4.62952
+        ]
+      },
+      "properties": {
+        "nombre": "Ronda Hidráulica y Franja de Amortiguación — La Vaca (SDA)",
+        "sector": "III",
+        "zona_humedal": "ronda_hidraulica",
+        "estado_conservacion": "protegido_decreto_190",
+        "especie_destacada": "Aliso (Alnus acuminata) y Sauce llorón",
+        "osm_id": "ideca/humedal-vaca-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16195,
+          4.62845
+        ]
+      },
+      "properties": {
+        "nombre": "Sendero Ecológico y Mirador Ambiental — La Vaca Norte (SDA)",
+        "sector": "III",
+        "zona_humedal": "zona_manejo_preservacion",
+        "estado_conservacion": "activo_educacion_ambiental",
+        "especie_destacada": "Garza real (Ardea alba) y Monjita cabeciamarilla",
+        "osm_id": "ideca/humedal-vaca-3"
+      }
+    }
   ]
 }
