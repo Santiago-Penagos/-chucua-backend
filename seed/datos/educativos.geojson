@@ -1,12 +1,9 @@
 {
   "type": "FeatureCollection",
-  "name": "educativos_respaldo",
+  "name": "educativos_ideca",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.625251]}, "properties": {"id": null, "nombre": "IED San Jorge", "sector": "I", "osm_id": "respaldo/edu-1", "nivel_educativo": "basica", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.625487]}, "properties": {"id": null, "nombre": "Jardín Infantil Ronda Norte", "sector": "I", "osm_id": "respaldo/edu-2", "nivel_educativo": "preescolar", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167878, 4.629444]}, "properties": {"id": null, "nombre": "Colegio Chucua Central", "sector": "II", "osm_id": "respaldo/edu-3", "nivel_educativo": "basica", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167878, 4.629653]}, "properties": {"id": null, "nombre": "Centro de Formación Cra. 81", "sector": "II", "osm_id": "respaldo/edu-4", "nivel_educativo": "superior", "naturaleza": "privado"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166406, 4.631509]}, "properties": {"id": null, "nombre": "IED Chucua de la Vaca Sur", "sector": "III", "osm_id": "respaldo/edu-5", "nivel_educativo": "basica", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166235, 4.630693]}, "properties": {"id": null, "nombre": "Jardín Infantil Parques del Sur", "sector": "III", "osm_id": "respaldo/edu-6", "nivel_educativo": "preescolar", "naturaleza": "publico"}}
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167498, 4.622272]}, "properties": {"nombre": "Liceo Santa Catalina de Siena", "sector": "I", "osm_id": "ideca/07261316", "nivel_educativo": "basica", "naturaleza": "privado"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16746, 4.625552]}, "properties": {"nombre": "Liceo Psicopedagógico Nueva Era", "sector": "I", "osm_id": "ideca/07261342", "nivel_educativo": "basica", "naturaleza": "privado"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16437, 4.62512]}, "properties": {"nombre": "Unidad Educativa El Futuro del Mañana", "sector": "II", "osm_id": "ideca/07261240", "nivel_educativo": "basica", "naturaleza": "privado"}}
   ]
 }

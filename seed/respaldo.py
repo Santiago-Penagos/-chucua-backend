@@ -8,15 +8,16 @@ from .constructores import DOMINIOS, ESPECIFICACIONES
 RUTA_DATOS = Path(__file__).resolve().parent / "datos"
 
 
-def _entidad(dominio: str, feature: dict):
+def _entidad(dominio: str, feature: dict, indice: int):
     clase, campos = ESPECIFICACIONES[dominio]
     props = feature.get("properties") or {}
     atributos = {campo: props[campo] for campo in campos}
+    osm_id = props.get("osm_id") or f"respaldo/{dominio}-{indice}"
     return clase(
         nombre=props["nombre"],
         sector=props["sector"],
         geometria=desde_geojson(feature["geometry"]),
-        osm_id=props.get("osm_id"),
+        osm_id=osm_id,
         **atributos,
     )
 
@@ -25,7 +26,10 @@ def cargar_dominio(dominio: str) -> list:
     ruta = RUTA_DATOS / f"{dominio}.geojson"
     with ruta.open(encoding="utf-8") as archivo:
         datos = json.load(archivo)
-    return [_entidad(dominio, feature) for feature in datos["features"]]
+    return [
+        _entidad(dominio, feature, indice)
+        for indice, feature in enumerate(datos["features"], start=1)
+    ]
 
 
 def cargar_todo() -> dict[str, list]:

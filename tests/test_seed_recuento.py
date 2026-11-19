@@ -14,9 +14,11 @@ DOMINIOS = (
     "zonas_verdes",
     "demografia",
 )
-POR_DOMINIO = 6
-TOTAL = len(DOMINIOS) * POR_DOMINIO
-POR_SECTOR = TOTAL // 3
+POR_DOMINIO = {dominio: 6 for dominio in DOMINIOS}
+POR_DOMINIO["escenarios"] = 5
+POR_DOMINIO["educativos"] = 3
+TOTAL = sum(POR_DOMINIO.values())
+POR_SECTOR = {"I": 31, "II": 25, "III": 24}
 
 
 def test_semilla_de_respaldo_carga_los_catorce_dominios(conexion):
@@ -25,5 +27,5 @@ def test_semilla_de_respaldo_carga_los_catorce_dominios(conexion):
     reporte = sembrar("respaldo", conexion=conexion, usar_red=False)
     assert reporte["fuente"] == "respaldo"
     assert reporte["total"] == TOTAL
-    assert reporte["dominios"] == {dominio: POR_DOMINIO for dominio in DOMINIOS}
-    assert reporte["sectores"] == {"I": POR_SECTOR, "II": POR_SECTOR, "III": POR_SECTOR}
+    assert reporte["dominios"] == POR_DOMINIO
+    assert reporte["sectores"] == POR_SECTOR

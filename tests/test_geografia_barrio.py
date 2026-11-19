@@ -49,6 +49,8 @@ def test_registros_de_los_catorce_dominios_caen_en_su_sector():
             conteo[entidad.sector] += 1
         if dominio == "escenarios":
             assert conteo == Counter({"I": 5})
+        elif dominio == "educativos":
+            assert conteo == Counter({"I": 2, "II": 1})
         else:
             assert conteo == Counter({"I": 2, "II": 2, "III": 2})
 
