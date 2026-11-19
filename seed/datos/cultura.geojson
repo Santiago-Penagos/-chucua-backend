@@ -1,12 +1,23 @@
 {
   "type": "FeatureCollection",
-  "name": "cultura_respaldo",
+  "name": "cultura_ideca_real",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169195, 4.627843]}, "properties": {"id": null, "nombre": "Casa de la Cultura Chucua Norte", "sector": "I", "osm_id": "respaldo/cultura-1", "tipo_espacio": "casa_cultura", "actividad_principal": "Talleres de arte y música", "direccion": "Calle 38C Sur # 81-60", "aforo_aproximado": 120}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169195, 4.628078]}, "properties": {"id": null, "nombre": "Biblioteca Ronda Norte", "sector": "I", "osm_id": "respaldo/cultura-2", "tipo_espacio": "biblioteca", "actividad_principal": "Lectura infantil y juvenil", "direccion": "Carrera 86 # 38C-05", "aforo_aproximado": 70}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168081, 4.629862]}, "properties": {"id": null, "nombre": "Centro Comunitario Chucua Central", "sector": "II", "osm_id": "respaldo/cultura-3", "tipo_espacio": "salon_comunal", "actividad_principal": "Reuniones y talleres barriales", "direccion": "Calle 42 Sur # 81-40", "aforo_aproximado": 80}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167878, 4.628816]}, "properties": {"id": null, "nombre": "Salón Comunal Calle 42 Sur", "sector": "II", "osm_id": "respaldo/cultura-4", "tipo_espacio": "salon_comunal", "actividad_principal": "Ensayo de danza folclórica", "direccion": "Carrera 81 # 42-55", "aforo_aproximado": 45}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166406, 4.630856]}, "properties": {"id": null, "nombre": "Biblioteca Popular Chucua Sur", "sector": "III", "osm_id": "respaldo/cultura-5", "tipo_espacio": "biblioteca", "actividad_principal": "Lectura y refuerzo escolar", "direccion": "Calle 42F Sur # 82-25", "aforo_aproximado": 60}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166406, 4.631019]}, "properties": {"id": null, "nombre": "Capilla Ronda Sur", "sector": "III", "osm_id": "respaldo/cultura-6", "tipo_espacio": "iglesia", "actividad_principal": "Oración y catequesis", "direccion": "Carrera 86A # 42F-35", "aforo_aproximado": 90}}
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.167647,
+          4.621823
+        ]
+      },
+      "properties": {
+        "nombre": "Escultura Sueño Infantil (IDECA 05180484)",
+        "sector": "I",
+        "tipo_cultural": "escultura_publica",
+        "entidad": "IDPC / Catastro Bogotá",
+        "osm_id": "ideca/05180484"
+      }
+    }
   ]
 }

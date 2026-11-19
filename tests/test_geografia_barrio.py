@@ -51,10 +51,12 @@ def test_registros_de_los_catorce_dominios_caen_en_su_sector():
             assert conteo == Counter({"I": 5})
         elif dominio == "educativos":
             assert conteo == Counter({"I": 2, "II": 1})
-        elif dominio == "salud":
+        elif dominio in ("salud", "centros_salud"):
             assert conteo == Counter()
         elif dominio == "seguridad":
             assert conteo == Counter({"II": 1})
+        elif dominio == "cultura":
+            assert conteo == Counter({"I": 1})
         elif dominio == "jac":
             assert conteo == Counter({"I": 4, "II": 2, "III": 2})
         else:

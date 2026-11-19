@@ -2,6 +2,22 @@
   "type": "FeatureCollection",
   "name": "seguridad_ideca_real",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167346, 4.629244]}, "properties": {"nombre": "CAI Bellavista (IDECA 06250501)", "sector": "II", "tipo_punto": "cai", "entidad": "Policía Metropolitana de Bogotá", "osm_id": "ideca/06250501"}}
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.167346,
+          4.629244
+        ]
+      },
+      "properties": {
+        "nombre": "CAI Bellavista (IDECA 06250501)",
+        "sector": "II",
+        "tipo_punto": "cai",
+        "cuadrante": "Cuadrante 018 - CAI Bellavista",
+        "osm_id": "ideca/06250501"
+      }
+    }
   ]
 }
