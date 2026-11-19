@@ -2,8 +2,8 @@
   "type": "FeatureCollection",
   "name": "educativos_ideca",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167498, 4.622272]}, "properties": {"nombre": "Liceo Santa Catalina de Siena", "sector": "I", "osm_id": "ideca/07261316", "nivel_educativo": "basica", "naturaleza": "privado"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16746, 4.625552]}, "properties": {"nombre": "Liceo Psicopedagógico Nueva Era", "sector": "I", "osm_id": "ideca/07261342", "nivel_educativo": "basica", "naturaleza": "privado"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16437, 4.62512]}, "properties": {"nombre": "Unidad Educativa El Futuro del Mañana", "sector": "II", "osm_id": "ideca/07261240", "nivel_educativo": "basica", "naturaleza": "privado"}}
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167498, 4.622272]}, "properties": {"nombre": "Liceo Santa Catalina de Siena (IDECA 07261316)", "sector": "I", "osm_id": "ideca/07261316", "nivel_educativo": "basica", "naturaleza": "privado"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16746, 4.625552]}, "properties": {"nombre": "Liceo Psicopedagógico Nueva Era (IDECA 07261342)", "sector": "I", "osm_id": "ideca/07261342", "nivel_educativo": "basica", "naturaleza": "privado"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16437, 4.62512]}, "properties": {"nombre": "Unidad Educativa El Futuro del Mañana (IDECA 07261240)", "sector": "II", "osm_id": "ideca/07261240", "nivel_educativo": "basica", "naturaleza": "privado"}}
   ]
 }

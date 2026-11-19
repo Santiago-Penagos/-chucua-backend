@@ -19,8 +19,8 @@ TIPOS = {
 }
 
 
-TAMANOS = {"escenarios": 5, "educativos": 3}
-SECTORES = {"escenarios": {"I"}, "educativos": {"I", "II"}}
+TAMANOS = {"escenarios": 5, "educativos": 3, "jac": 8}
+SECTORES = {"escenarios": {"I"}, "educativos": {"I", "II"}, "jac": {"I", "II", "III"}}
 
 
 def test_respaldo_cubre_los_catorce_dominios():
@@ -37,7 +37,7 @@ def test_respaldo_tiene_geometrias_y_atributos_validos():
         for entidad in cargar_dominio(dominio):
             assert entidad.nombre
             assert entidad.geometria.a_geojson()["type"] == tipo
-            assert entidad.osm_id.startswith(("respaldo/", "ideca/"))
+            assert entidad.osm_id.startswith(("respaldo/", "ideca/", "idpac/"))
 
 
 def test_respaldo_de_catastro_tiene_area_positiva():
