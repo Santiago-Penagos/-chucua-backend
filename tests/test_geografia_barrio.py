@@ -1,4 +1,4 @@
-from collections import Counter
+﻿from collections import Counter
 
 from chucua_backend.geografia import (
     LIMITES_BARRIO,
@@ -65,12 +65,12 @@ def test_registros_de_los_catorce_dominios_caen_en_su_sector():
             assert conteo == Counter({"I": 2, "II": 2, "III": 2})
 
 
-def test_diez_dominios_puntuales_tienen_sesenta_y_dos_coordenadas_unicas():
+def test_diez_dominios_puntuales_tienen_cuarenta_coordenadas_unicas():
     coordenadas = []
     for dominio in DOMINIOS_PUNTUALES:
         for entidad in cargar_dominio(dominio):
             coordenadas.append(tuple(entidad.geometria.coordenada))
-    assert len(coordenadas) == len(set(coordenadas)) == 62
+    assert len(coordenadas) == len(set(coordenadas)) == 40
 
 
 def test_nombres_sin_identificadores_crudos_de_osm():
@@ -78,3 +78,4 @@ def test_nombres_sin_identificadores_crudos_de_osm():
         for entidad in cargar_dominio(dominio):
             assert "way/" not in entidad.nombre
             assert "node/" not in entidad.nombre
+

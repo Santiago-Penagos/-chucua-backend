@@ -1,4 +1,4 @@
-from seed.constructores import DOMINIOS
+﻿from seed.constructores import DOMINIOS
 from seed.respaldo import cargar_dominio, cargar_todo
 
 TIPOS = {
@@ -43,3 +43,4 @@ def test_respaldo_tiene_geometrias_y_atributos_validos():
 def test_respaldo_de_catastro_tiene_area_positiva():
     for entidad in cargar_dominio("catastro"):
         assert entidad.area_m2 > 0
+
