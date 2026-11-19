@@ -20,7 +20,7 @@ TIPOS = {
 
 
 TAMANOS = {"escenarios": 5, "educativos": 3, "jac": 8}
-SECTORES = {"escenarios": {"I"}, "educativos": {"I", "II"}, "jac": {"I", "II", "III"}}
+SECTORES = {"escenarios": {"I"}, "educativos": {"I", "II"}, "jac": {"I", "II", "III"}, "centros_salud": set(), "seguridad": {"II"}, "cultura": {"I"}, "servicios_publicos": set()}
 
 
 def test_respaldo_cubre_los_catorce_dominios():
@@ -43,5 +43,6 @@ def test_respaldo_tiene_geometrias_y_atributos_validos():
 def test_respaldo_de_catastro_tiene_area_positiva():
     for entidad in cargar_dominio("catastro"):
         assert entidad.area_m2 > 0
+
 
 
