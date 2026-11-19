@@ -14,8 +14,8 @@
       "properties": {
         "nombre": "Escultura Sueño Infantil (IDECA 05180484)",
         "sector": "I",
-        "tipo_cultural": "escultura_publica",
-        "entidad": "IDPC / Catastro Bogotá",
+        "tipo_espacio": "escultura_publica",
+        "actividad_principal": "Arte público y patrimonio urbano (IDPC)",
         "osm_id": "ideca/05180484"
       }
     }
