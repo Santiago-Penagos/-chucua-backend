@@ -1,12 +1,5 @@
 {
   "type": "FeatureCollection",
-  "name": "servicios_publicos_respaldo",
-  "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16888, 4.625251]}, "properties": {"id": null, "nombre": "PTAP Chucua Norte", "sector": "I", "osm_id": "respaldo/servicios_publicos-1", "tipo_servicio": "acueducto", "estado_operativo": "operativo", "ubicacion_referencia": "Costado noroccidental, junto a la ronda del humedal"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.16888, 4.625487]}, "properties": {"id": null, "nombre": "Subestación Eléctrica Ronda Norte", "sector": "I", "osm_id": "respaldo/servicios_publicos-2", "tipo_servicio": "energia", "estado_operativo": "operativo", "ubicacion_referencia": "Carrera 86 con Calle 38C Sur"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167676, 4.629862]}, "properties": {"id": null, "nombre": "Estación de Bombeo Calle 42 Sur", "sector": "II", "osm_id": "respaldo/servicios_publicos-3", "tipo_servicio": "alcantarillado", "estado_operativo": "mantenimiento", "ubicacion_referencia": "Calle 42 Sur # 81-55"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167676, 4.630072]}, "properties": {"id": null, "nombre": "Punto Limpio Chucua Central", "sector": "II", "osm_id": "respaldo/servicios_publicos-4", "tipo_servicio": "aseo", "estado_operativo": "operativo", "ubicacion_referencia": "Carrera 81 # 42-70"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166064, 4.630856]}, "properties": {"id": null, "nombre": "Tanque Chucua Sur", "sector": "III", "osm_id": "respaldo/servicios_publicos-5", "tipo_servicio": "acueducto", "estado_operativo": "operativo", "ubicacion_referencia": "Zona sur del barrio, junto a la ronda del humedal"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166064, 4.631019]}, "properties": {"id": null, "nombre": "Punto de Recolección Calle 42F Sur", "sector": "III", "osm_id": "respaldo/servicios_publicos-6", "tipo_servicio": "aseo", "estado_operativo": "fuera_servicio", "ubicacion_referencia": "Carrera 86A con Calle 42F Sur"}}
-  ]
+  "name": "servicios_ideca_real",
+  "features": []
 }
