@@ -19,7 +19,7 @@ POR_DOMINIO["escenarios"] = 5
 POR_DOMINIO["educativos"] = 3
 POR_DOMINIO["jac"] = 8
 TOTAL = sum(POR_DOMINIO.values())
-POR_SECTOR = {"I": 33, "II": 25, "III": 24}
+POR_SECTOR = {"I": 31, "II": 23, "III": 22}
 
 
 def test_semilla_de_respaldo_carga_los_catorce_dominios(conexion):
