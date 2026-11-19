@@ -1,12 +1,1 @@
-{
-  "type": "FeatureCollection",
-  "name": "centros_salud_respaldo",
-  "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169353, 4.627843]}, "properties": {"id": null, "nombre": "Centro de Salud Chucua Norte", "sector": "I", "osm_id": "respaldo/centros_salud-1", "tipo_centro": "centro_salud", "nivel_atencion": "I", "horario": "Lunes a viernes 7:00 a.m. - 5:00 p.m.", "direccion": "Calle 38C Sur # 81-50"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169353, 4.628078]}, "properties": {"id": null, "nombre": "Puesto de Salud Ronda Norte", "sector": "I", "osm_id": "respaldo/centros_salud-2", "tipo_centro": "puesto_salud", "nivel_atencion": "I", "horario": "Lunes a sábado 8:00 a.m. - 4:00 p.m.", "direccion": "Carrera 86 # 38C-12"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168081, 4.629025]}, "properties": {"id": null, "nombre": "Centro de Salud Chucua Central", "sector": "II", "osm_id": "respaldo/centros_salud-3", "tipo_centro": "centro_salud", "nivel_atencion": "II", "horario": "Lunes a viernes 6:00 a.m. - 6:00 p.m.", "direccion": "Calle 42 Sur # 81-05"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168081, 4.629234]}, "properties": {"id": null, "nombre": "Unidad Médica Calle 42 Sur", "sector": "II", "osm_id": "respaldo/centros_salud-4", "tipo_centro": "unidad_medica", "nivel_atencion": "II", "horario": "Lunes a sábado 7:00 a.m. - 7:00 p.m.", "direccion": "Carrera 81 # 42-60"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166577, 4.630856]}, "properties": {"id": null, "nombre": "Puesto de Salud Chucua Sur", "sector": "III", "osm_id": "respaldo/centros_salud-5", "tipo_centro": "puesto_salud", "nivel_atencion": "I", "horario": "Lunes a viernes 8:00 a.m. - 3:00 p.m.", "direccion": "Calle 42F Sur # 82-18"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166577, 4.631019]}, "properties": {"id": null, "nombre": "Clínica Comunitaria Ronda Sur", "sector": "III", "osm_id": "respaldo/centros_salud-6", "tipo_centro": "clinica", "nivel_atencion": "III", "horario": "Atención 24 horas", "direccion": "Carrera 86 # 43-40"}}
-  ]
-}
+{\n  "type": "FeatureCollection",\n  "name": "salud_ideca_real",\n  "features": []\n}\n
