@@ -39,7 +39,7 @@ def sembrar(
         if not entidades:
             entidades = respaldo.cargar_dominio(dominio)
             detalle_fuente[dominio] = "respaldo"
-        conexion.execute(f"DELETE FROM {repositorios[dominio].tabla} WHERE osm_id IS NOT NULL")
+        conexion.execute(f"DELETE FROM {repositorios[dominio].tabla} ")
         for entidad in entidades:
             repositorios[dominio].upsert_por_osm_id(entidad)
     return _reporte(fuente, detalle_fuente, repositorios)
@@ -81,4 +81,5 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
