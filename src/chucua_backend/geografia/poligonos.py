@@ -1,26 +1,23 @@
-"""Polígonos oficiales IDECA/UAECD del barrio Chucua de la Vaca (Sectores I, II y III)."""
+﻿"""Polígonos oficiales IDECA/UAECD del barrio Chucua de la Vaca (Sectores I, II y III)."""
 
+from importlib.resources import files
 import json
-from pathlib import Path
 
 from ..dominio.geometria import Coordenada
 
 SECTORES = ("I", "II", "III")
 
-_DATOS = (
-    Path(__file__).resolve().parents[3] / "seed" / "datos" / "sectores_barrio.geojson"
-)
-
 
 def _cargar_oficial() -> dict:
-    return json.loads(_DATOS.read_text(encoding="utf-8"))
+    recurso = files("seed").joinpath("datos/sectores_barrio.geojson")
+    return json.loads(recurso.read_text(encoding="utf-8"))
 
 
 _COLECCION = _cargar_oficial()
 
 ANILLOS: dict[str, tuple[Coordenada, ...]] = {
     feat["properties"]["sector"]: tuple(
-        (float(lon), float(lat)) for lon, lat in feat["geometry"]["coordinates"][0]
+        (float(lon), float(lat)) for lon, lat in feat["geometry"]["coordinates"]
     )
     for feat in _COLECCION["features"]
 }
@@ -38,10 +35,10 @@ DESCRIPCIONES: dict[str, str] = {
 _TODOS = [punto for anillo in ANILLOS.values() for punto in anillo]
 
 LIMITES_BARRIO = {
-    "norte": max(p[1] for p in _TODOS),
-    "sur": min(p[1] for p in _TODOS),
-    "occidente": min(p[0] for p in _TODOS),
-    "oriente": max(p[0] for p in _TODOS),
+    "norte": max(p for p in _TODOS),
+    "sur": min(p for p in _TODOS),
+    "occidente": min(p for p in _TODOS),
+    "oriente": max(p for p in _TODOS),
 }
 
 POLIGONO_BARRIO: tuple[Coordenada, ...] = (
