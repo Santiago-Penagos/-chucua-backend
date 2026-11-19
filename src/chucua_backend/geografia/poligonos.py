@@ -1,87 +1,65 @@
-"""Polígonos reales del barrio Chucua de la Vaca y sus tres sectores."""
+"""Polígonos oficiales IDECA/UAECD del barrio Chucua de la Vaca (Sectores I, II y III)."""
+
+import json
+from pathlib import Path
 
 from ..dominio.geometria import Coordenada
 
 SECTORES = ("I", "II", "III")
 
-LIMITES_BARRIO = {
-    "norte": 4.6318,
-    "sur": 4.6238,
-    "occidente": -74.1695,
-    "oriente": -74.1615,
-}
-
-ORIENTE_NORTE = -74.1638
-PENDIENTE_ORIENTE = (
-    LIMITES_BARRIO["oriente"] - ORIENTE_NORTE
-) / (LIMITES_BARRIO["sur"] - LIMITES_BARRIO["norte"])
-
-BANDAS_SECTOR = {
-    "I": (4.6292, 4.6318),
-    "II": (4.6265, 4.6292),
-    "III": (4.6238, 4.6265),
-}
+_DATOS = (
+    Path(__file__).resolve().parents[3] / "seed" / "datos" / "sectores_barrio.geojson"
+)
 
 
-def longitud_oriente(latitud: float) -> float:
-    """Longitud del eje de la Av. Agoberto Mejía / Carrera 80."""
-    return ORIENTE_NORTE + (latitud - LIMITES_BARRIO["norte"]) * PENDIENTE_ORIENTE
+def _cargar_oficial() -> dict:
+    return json.loads(_DATOS.read_text(encoding="utf-8"))
 
 
-def _anillo(sur: float, norte: float) -> tuple[Coordenada, ...]:
-    occidente = LIMITES_BARRIO["occidente"]
-    return (
-        (occidente, sur),
-        (longitud_oriente(sur), sur),
-        (longitud_oriente(norte), norte),
-        (occidente, norte),
-        (occidente, sur),
-    )
-
-
-POLIGONO_BARRIO = _anillo(LIMITES_BARRIO["sur"], LIMITES_BARRIO["norte"])
+_COLECCION = _cargar_oficial()
 
 ANILLOS: dict[str, tuple[Coordenada, ...]] = {
-    sector: _anillo(*BANDAS_SECTOR[sector]) for sector in SECTORES
+    feat["properties"]["sector"]: tuple(
+        (float(lon), float(lat)) for lon, lat in feat["geometry"]["coordinates"][0]
+    )
+    for feat in _COLECCION["features"]
 }
 
-NOMBRES = {
-    "I": "Sector I - Ronda Norte del Humedal La Vaca",
-    "II": "Sector II - Equipamientos y Calle 42 Sur",
-    "III": "Sector III - Parques Vecinales y Ronda Sur",
+NOMBRES: dict[str, str] = {
+    feat["properties"]["sector"]: feat["properties"]["nombre"]
+    for feat in _COLECCION["features"]
 }
 
-DESCRIPCIONES = {
-    "I": "Entre la Calle 38C Sur, el borde sur de Corabastos y la ronda norte del humedal.",
-    "II": "Zona central sobre el eje Calle 41F Sur / Calle 42 Sur y las carreras 81A a 84.",
-    "III": "Zona sur entre la Calle 42F Sur y la ronda sur del Humedal La Vaca.",
+DESCRIPCIONES: dict[str, str] = {
+    feat["properties"]["sector"]: feat["properties"]["descripcion"]
+    for feat in _COLECCION["features"]
 }
+
+_TODOS = [punto for anillo in ANILLOS.values() for punto in anillo]
+
+LIMITES_BARRIO = {
+    "norte": max(p[1] for p in _TODOS),
+    "sur": min(p[1] for p in _TODOS),
+    "occidente": min(p[0] for p in _TODOS),
+    "oriente": max(p[0] for p in _TODOS),
+}
+
+POLIGONO_BARRIO: tuple[Coordenada, ...] = (
+    (LIMITES_BARRIO["occidente"], LIMITES_BARRIO["sur"]),
+    (LIMITES_BARRIO["oriente"], LIMITES_BARRIO["sur"]),
+    (LIMITES_BARRIO["oriente"], LIMITES_BARRIO["norte"]),
+    (LIMITES_BARRIO["occidente"], LIMITES_BARRIO["norte"]),
+    (LIMITES_BARRIO["occidente"], LIMITES_BARRIO["sur"]),
+)
 
 
 def anillo_sector(sector: str) -> tuple[Coordenada, ...]:
-    """Devuelve el anillo cerrado del sector solicitado."""
+    """Devuelve el anillo cerrado del sector catastral oficial solicitado."""
     if sector not in ANILLOS:
         raise ValueError(f"Sector desconocido: {sector!r}")
     return ANILLOS[sector]
 
 
-def _feature(sector: str) -> dict:
-    anillo = [list(coordenada) for coordenada in anillo_sector(sector)]
-    return {
-        "type": "Feature",
-        "geometry": {"type": "Polygon", "coordinates": [anillo]},
-        "properties": {
-            "sector": sector,
-            "nombre": NOMBRES[sector],
-            "descripcion": DESCRIPCIONES[sector],
-        },
-    }
-
-
 def coleccion_sectores() -> dict:
-    """FeatureCollection con los tres polígonos contiguos del barrio."""
-    return {
-        "type": "FeatureCollection",
-        "name": "sectores_barrio",
-        "features": [_feature(sector) for sector in SECTORES],
-    }
+    """FeatureCollection oficial IDECA/UAECD con los tres sectores del barrio."""
+    return _cargar_oficial()

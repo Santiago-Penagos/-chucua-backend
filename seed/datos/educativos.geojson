@@ -2,11 +2,11 @@
   "type": "FeatureCollection",
   "name": "educativos_respaldo",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167733, 4.631]}, "properties": {"id": null, "nombre": "IED San Jorge", "sector": "I", "osm_id": "respaldo/edu-1", "nivel_educativo": "basica", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166523, 4.6307]}, "properties": {"id": null, "nombre": "Jardín Infantil Ronda Norte", "sector": "I", "osm_id": "respaldo/edu-2", "nivel_educativo": "preescolar", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167453, 4.6276]}, "properties": {"id": null, "nombre": "Colegio Chucua Central", "sector": "II", "osm_id": "respaldo/edu-3", "nivel_educativo": "basica", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166802, 4.6287]}, "properties": {"id": null, "nombre": "Centro de Formación Cra. 81", "sector": "II", "osm_id": "respaldo/edu-4", "nivel_educativo": "superior", "naturaleza": "privado"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166709, 4.6248]}, "properties": {"id": null, "nombre": "IED Chucua de la Vaca Sur", "sector": "III", "osm_id": "respaldo/edu-5", "nivel_educativo": "basica", "naturaleza": "publico"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166244, 4.6256]}, "properties": {"id": null, "nombre": "Jardín Infantil Parques del Sur", "sector": "III", "osm_id": "respaldo/edu-6", "nivel_educativo": "preescolar", "naturaleza": "publico"}}
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.625251]}, "properties": {"id": null, "nombre": "IED San Jorge", "sector": "I", "osm_id": "respaldo/edu-1", "nivel_educativo": "basica", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.625487]}, "properties": {"id": null, "nombre": "Jardín Infantil Ronda Norte", "sector": "I", "osm_id": "respaldo/edu-2", "nivel_educativo": "preescolar", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167878, 4.629444]}, "properties": {"id": null, "nombre": "Colegio Chucua Central", "sector": "II", "osm_id": "respaldo/edu-3", "nivel_educativo": "basica", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167878, 4.629653]}, "properties": {"id": null, "nombre": "Centro de Formación Cra. 81", "sector": "II", "osm_id": "respaldo/edu-4", "nivel_educativo": "superior", "naturaleza": "privado"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166406, 4.631509]}, "properties": {"id": null, "nombre": "IED Chucua de la Vaca Sur", "sector": "III", "osm_id": "respaldo/edu-5", "nivel_educativo": "basica", "naturaleza": "publico"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166235, 4.630693]}, "properties": {"id": null, "nombre": "Jardín Infantil Parques del Sur", "sector": "III", "osm_id": "respaldo/edu-6", "nivel_educativo": "preescolar", "naturaleza": "publico"}}
   ]
 }

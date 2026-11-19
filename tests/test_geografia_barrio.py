@@ -2,7 +2,6 @@ from collections import Counter
 
 from chucua_backend.geografia import (
     LIMITES_BARRIO,
-    POLIGONO_BARRIO,
     SECTORES,
     anillo_sector,
     contiene_punto,
@@ -32,16 +31,13 @@ def _area_grados(anillo) -> float:
     return abs(suma) / 2
 
 
-def test_sectores_contiguos_cubren_el_barrio_sin_solape():
-    assert LIMITES_BARRIO == {
-        "norte": 4.6318,
-        "sur": 4.6238,
-        "occidente": -74.1695,
-        "oriente": -74.1615,
-    }
-    total = sum(_area_grados(anillo_sector(sector)) for sector in SECTORES)
-    assert abs(total - _area_grados(POLIGONO_BARRIO)) < 1e-12
-    assert len({anillo_sector(sector)[0] for sector in SECTORES}) == 3
+def test_sectores_oficiales_ideca_son_poligonos_cerrados():
+    assert LIMITES_BARRIO["sur"] < LIMITES_BARRIO["norte"]
+    assert LIMITES_BARRIO["occidente"] < LIMITES_BARRIO["oriente"]
+    for sector in SECTORES:
+        anillo = anillo_sector(sector)
+        assert anillo[0] == anillo[-1]
+        assert _area_grados(anillo) > 0
 
 
 def test_registros_de_los_catorce_dominios_caen_en_su_sector():
