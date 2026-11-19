@@ -17,6 +17,7 @@
         "tipo_espacio": "escultura_publica",
         "actividad_principal": "Arte público y patrimonio urbano (IDPC)",
         "direccion": "CL 44 SUR - KR 80G",
+        "aforo_aproximado": 50,
         "osm_id": "ideca/05180484"
       }
     }
