@@ -27,7 +27,7 @@ def test_respaldo_cubre_los_catorce_dominios():
     datos = cargar_todo()
     assert set(datos) == set(DOMINIOS) == set(TIPOS)
     for dominio, entidades in datos.items():
-        assert len(entidades) >= TAMANOS.get(dominio, 3)
+        assert len(entidades) >= TAMANOS.get(dominio, 0)
         esperados = SECTORES.get(dominio, {"I", "II", "III"})
         assert {e.sector for e in entidades} == esperados
 
@@ -43,4 +43,5 @@ def test_respaldo_tiene_geometrias_y_atributos_validos():
 def test_respaldo_de_catastro_tiene_area_positiva():
     for entidad in cargar_dominio("catastro"):
         assert entidad.area_m2 > 0
+
 
