@@ -17,7 +17,7 @@ _COLECCION = _cargar_oficial()
 
 ANILLOS: dict[str, tuple[Coordenada, ...]] = {
     feat["properties"]["sector"]: tuple(
-        (float(lon), float(lat)) for lon, lat in feat["geometry"]["coordinates"]
+        (float(lon), float(lat)) for lon, lat in feat["geometry"]["coordinates"][0]
     )
     for feat in _COLECCION["features"]
 }
@@ -35,10 +35,10 @@ DESCRIPCIONES: dict[str, str] = {
 _TODOS = [punto for anillo in ANILLOS.values() for punto in anillo]
 
 LIMITES_BARRIO = {
-    "norte": max(p for p in _TODOS),
-    "sur": min(p for p in _TODOS),
-    "occidente": min(p for p in _TODOS),
-    "oriente": max(p for p in _TODOS),
+    "norte": max(p[1] for p in _TODOS),
+    "sur": min(p[1] for p in _TODOS),
+    "occidente": min(p[0] for p in _TODOS),
+    "oriente": max(p[0] for p in _TODOS),
 }
 
 POLIGONO_BARRIO: tuple[Coordenada, ...] = (
@@ -60,3 +60,4 @@ def anillo_sector(sector: str) -> tuple[Coordenada, ...]:
 def coleccion_sectores() -> dict:
     """FeatureCollection oficial IDECA/UAECD con los tres sectores del barrio."""
     return _cargar_oficial()
+
