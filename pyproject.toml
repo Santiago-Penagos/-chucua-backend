@@ -10,9 +10,13 @@ requires-python = ">=3.11"
 dependencies = []
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src", "."]
+include = ["chucua_backend*", "seed*"]
+
+[tool.setuptools.package-data]
+seed = ["datos/*.geojson"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "../chucua-api/tests"]
-pythonpath = ["src"]
+pythonpath = ["src", "."]
 addopts = "-q"
