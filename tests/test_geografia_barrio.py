@@ -47,7 +47,10 @@ def test_registros_de_los_catorce_dominios_caen_en_su_sector():
             for longitud, latitud in entidad.get_coordenadas():
                 assert contiene_punto(entidad.sector, longitud, latitud)
             conteo[entidad.sector] += 1
-        assert conteo == Counter({"I": 2, "II": 2, "III": 2})
+        if dominio == "escenarios":
+            assert conteo == Counter({"I": 5})
+        else:
+            assert conteo == Counter({"I": 2, "II": 2, "III": 2})
 
 
 def test_diez_dominios_puntuales_tienen_sesenta_coordenadas_unicas():

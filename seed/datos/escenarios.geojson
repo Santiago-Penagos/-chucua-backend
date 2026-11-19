@@ -1,12 +1,11 @@
 {
   "type": "FeatureCollection",
-  "name": "escenarios_respaldo",
+  "name": "escenarios_ideca_idrd",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.625722]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector I", "sector": "I", "osm_id": "respaldo/esc-1", "tipo_escenario": "cancha"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169038, 4.628078]}, "properties": {"id": null, "nombre": "Parque Infantil Ronda Norte", "sector": "I", "osm_id": "respaldo/esc-2", "tipo_escenario": "parque"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167878, 4.629862]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector II", "sector": "II", "osm_id": "respaldo/esc-3", "tipo_escenario": "cancha"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.167878, 4.630072]}, "properties": {"id": null, "nombre": "Polideportivo Central Chucua", "sector": "II", "osm_id": "respaldo/esc-4", "tipo_escenario": "polideportivo"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166235, 4.630856]}, "properties": {"id": null, "nombre": "Cancha Múltiple Chucua Sector III", "sector": "III", "osm_id": "respaldo/esc-5", "tipo_escenario": "cancha"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166235, 4.631019]}, "properties": {"id": null, "nombre": "Parque Vecinal Ronda Sur", "sector": "III", "osm_id": "respaldo/esc-6", "tipo_escenario": "parque"}}
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166916, 4.626024]}, "properties": {"nombre": "Parque Vecinal Villa De La Torre (IDRD 08-777)", "sector": "I", "tipo_escenario": "cancha_multiple", "estado": "bueno", "aforo": 120}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166992, 4.627499]}, "properties": {"nombre": "Parque Desarrollo Villa De La Loma Norte (IDRD 08-689)", "sector": "I", "tipo_escenario": "cancha_microfutbol", "estado": "bueno", "aforo": 80}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.165946, 4.622496]}, "properties": {"nombre": "Parque Desarrollo La Esperanza (IDRD 08-654)", "sector": "I", "tipo_escenario": "gimnasio_biosaludable", "estado": "bueno", "aforo": 45}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166971, 4.625289]}, "properties": {"nombre": "Parque Villa Nelly (IDRD 08-463)", "sector": "I", "tipo_escenario": "cancha_baloncesto", "estado": "regular", "aforo": 50}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168119, 4.628275]}, "properties": {"nombre": "Parque Desarrollo Villa De La Loma Occidental (IDRD 08-026)", "sector": "I", "tipo_escenario": "parque_recreativo", "estado": "bueno", "aforo": 40}}
   ]
 }
