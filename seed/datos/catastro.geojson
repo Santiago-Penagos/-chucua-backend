@@ -1,12 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "catastro_respaldo",
+  "name": "catastro_manzanas_uaecd",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.169019, 4.625126], [-74.168899, 4.625126], [-74.168899, 4.625226], [-74.169019, 4.625226], [-74.169019, 4.625126]]]}, "properties": {"id": null, "nombre": "Manzana Residencial Sector I - Cra. 81A", "sector": "I", "osm_id": "respaldo/cat-1", "uso_suelo": "residencial", "area_m2": 3400}},
-    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.168869, 4.625276], [-74.168749, 4.625276], [-74.168749, 4.625376], [-74.168869, 4.625376], [-74.168869, 4.625276]]]}, "properties": {"id": null, "nombre": "Predio Dotacional IED San Jorge", "sector": "I", "osm_id": "respaldo/cat-2", "uso_suelo": "dotacional", "area_m2": 3650}},
-    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.167652, 4.628533], [-74.167532, 4.628533], [-74.167532, 4.628633], [-74.167652, 4.628633], [-74.167652, 4.628533]]]}, "properties": {"id": null, "nombre": "Manzana Residencial Sector II - Calle 42 Sur", "sector": "II", "osm_id": "respaldo/cat-3", "uso_suelo": "residencial", "area_m2": 3500}},
-    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.167502, 4.628683], [-74.167382, 4.628683], [-74.167382, 4.628783], [-74.167502, 4.628783], [-74.167502, 4.628683]]]}, "properties": {"id": null, "nombre": "Predio Comercial Sector II - Cra. 82", "sector": "II", "osm_id": "respaldo/cat-4", "uso_suelo": "comercial", "area_m2": 3550}},
-    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.166215, 4.630655], [-74.166095, 4.630655], [-74.166095, 4.630755], [-74.166215, 4.630755], [-74.166215, 4.630655]]]}, "properties": {"id": null, "nombre": "Manzana Residencial Sector III - Cra. 86A", "sector": "III", "osm_id": "respaldo/cat-5", "uso_suelo": "residencial", "area_m2": 3450}},
-    {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-74.166065, 4.630805], [-74.165945, 4.630805], [-74.165945, 4.630905], [-74.166065, 4.630905], [-74.166065, 4.630805]]]}, "properties": {"id": null, "nombre": "Predio Dotacional Parque Chucua III", "sector": "III", "osm_id": "respaldo/cat-6", "uso_suelo": "dotacional", "area_m2": 3600}}
   ]
 }
