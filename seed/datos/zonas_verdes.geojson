@@ -7,18 +7,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.166931,
-          4.627479
+          -74.167146,
+          4.625914
         ]
       },
       "properties": {
-        "nombre": "Separador Arborizado Villa de la Loma (IDECA 91033237)",
+        "nombre": "Área Verde Parque Villa de la Torre (IDECA 08-777)",
         "sector": "I",
-        "area_aprox_m2": 558.0,
+        "area_aprox_m2": 2135.0,
         "tipo_vegetacion": "arborea_y_cesped",
         "estado_mantenimiento": "bueno",
-        "direccion": "CIV 8005168 · Sector I",
-        "osm_id": "ideca/91033237"
+        "direccion": "Sector I · Villa de la Torre",
+        "osm_id": "ideca/zv-08-777"
       }
     },
     {
@@ -26,37 +26,56 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.168681,
-          4.624726
+          -74.167274,
+          4.627887
         ]
       },
       "properties": {
-        "nombre": "Separador Verde Diagonal 45 Sur (IDECA 91039611)",
+        "nombre": "Área Verde Villa de la Loma Norte (IDECA 08-689)",
         "sector": "I",
-        "area_aprox_m2": 502.0,
-        "tipo_vegetacion": "cesped_y_arbustos",
-        "estado_mantenimiento": "regular",
-        "direccion": "CIV 8014245 · Diagonal 45 Sur",
-        "osm_id": "ideca/91039611"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.167111,
-          4.627582
-        ]
-      },
-      "properties": {
-        "nombre": "Separador Arborizado Calle 42F Sur (IDECA 91033389)",
-        "sector": "I",
-        "area_aprox_m2": 261.0,
-        "tipo_vegetacion": "arborea_urbana",
+        "area_aprox_m2": 978.0,
+        "tipo_vegetacion": "cesped_y_arborea",
         "estado_mantenimiento": "bueno",
-        "direccion": "CIV 8005120 · Calle 42F Sur",
-        "osm_id": "ideca/91033389"
+        "direccion": "Sector I · Villa de la Loma",
+        "osm_id": "ideca/zv-08-689"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.166078,
+          4.622532
+        ]
+      },
+      "properties": {
+        "nombre": "Área Verde Desarrollo La Esperanza (IDECA 08-654)",
+        "sector": "I",
+        "area_aprox_m2": 459.0,
+        "tipo_vegetacion": "cesped_urbano",
+        "estado_mantenimiento": "bueno",
+        "direccion": "Sector I · La Esperanza",
+        "osm_id": "ideca/zv-08-654"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16882,
+          4.624133
+        ]
+      },
+      "properties": {
+        "nombre": "Corredor Verde Borde Gran Britalia (IDECA 08-253)",
+        "sector": "I",
+        "area_aprox_m2": 1850.0,
+        "tipo_vegetacion": "arborea_y_arbustiva",
+        "estado_mantenimiento": "bueno",
+        "direccion": "Borde occidental · Sector I",
+        "osm_id": "ideca/zv-08-253"
       }
     },
     {
@@ -69,7 +88,7 @@
         ]
       },
       "properties": {
-        "nombre": "Separador Verde Amparo Cañizares (IDECA 91035444)",
+        "nombre": "Franja Verde Amparo Cañizares (IDECA 91035444)",
         "sector": "II",
         "area_aprox_m2": 406.0,
         "tipo_vegetacion": "cesped_y_arborea",
@@ -83,37 +102,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.166663,
-          4.631317
+          -74.16318,
+          4.62952
         ]
       },
       "properties": {
-        "nombre": "Franja Verde Borde Corabastos (IDECA 91037401)",
+        "nombre": "Franja Arborizada Ronda Humedal La Vaca (IDECA)",
         "sector": "III",
-        "area_aprox_m2": 622.0,
-        "tipo_vegetacion": "arborea_y_arbustiva",
-        "estado_mantenimiento": "regular",
-        "direccion": "CIV 8013734 · Sector III",
-        "osm_id": "ideca/91037401"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.166897,
-          4.63112
-        ]
-      },
-      "properties": {
-        "nombre": "Separador Verde El Amparo (IDECA 91035446)",
-        "sector": "III",
-        "area_aprox_m2": 172.0,
-        "tipo_vegetacion": "cesped_urbano",
+        "area_aprox_m2": 3200.0,
+        "tipo_vegetacion": "humedal_y_arborea",
         "estado_mantenimiento": "bueno",
-        "direccion": "CIV 8004447 · Sector III",
-        "osm_id": "ideca/91035446"
+        "direccion": "Ronda occidental Humedal · Sector III",
+        "osm_id": "ideca/zv-humedal-3"
       }
     }
   ]
