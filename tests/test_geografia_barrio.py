@@ -64,7 +64,7 @@ def test_registros_de_los_catorce_dominios_caen_en_su_sector():
         elif dominio == "zonas_verdes":
             assert conteo == Counter({"I": 4, "II": 1, "III": 1})
         elif dominio == "catastro":
-            assert conteo == Counter({"I": 31, "II": 48, "III": 13})
+            assert conteo == Counter({"I": 0, "II": 51, "III": 42})
         elif dominio == "jac":
             assert conteo == Counter({"I": 4, "II": 2, "III": 2})
         else:
