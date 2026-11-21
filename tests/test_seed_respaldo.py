@@ -13,7 +13,7 @@ TIPOS = {
     "transporte": "Point",
     "comercio": "Point",
     "cultura": "Point",
-    "transporte": {"I", "III"},
+    "transporte": "Point",
     "servicios_publicos": "Point",
     "zonas_verdes": "Point",
     "demografia": "Point",
@@ -45,6 +45,7 @@ def test_respaldo_tiene_geometrias_y_atributos_validos():
 def test_respaldo_de_catastro_tiene_area_positiva():
     for entidad in cargar_dominio("catastro"):
         assert entidad.area_m2 > 0
+
 
 
 
