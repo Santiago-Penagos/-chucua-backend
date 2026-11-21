@@ -67,6 +67,8 @@ def test_registros_de_los_catorce_dominios_caen_en_su_sector():
             assert conteo == Counter({"I": 31, "II": 31, "III": 31})
         elif dominio == "demografia":
             assert conteo == Counter({"I": 1, "II": 1, "III": 1})
+        elif dominio == "vias":
+            assert conteo == Counter({"I": 31, "II": 31, "III": 31})
         elif dominio == "jac":
             assert conteo == Counter({"I": 4, "II": 2, "III": 2})
         else:
