@@ -45,25 +45,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.169198,
-          4.625882
-        ]
-      },
-      "properties": {
-        "nombre": "Paradero SITP Br. Villa Nelly · Av. Villavicencio - Kr 81G (033A08)",
-        "sector": "I",
-        "codigo_paradero": "033A08",
-        "rutas_alimentadoras": "Zonas F / K · Corredor Av. Villavicencio",
-        "direccion": "Av. Villavicencio - Kr 81G",
-        "estado_senalizacion": "buena",
-        "osm_id": "ideca/sitp-033A08"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -74.166554,
           4.631407
         ]
