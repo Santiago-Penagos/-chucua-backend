@@ -1,12 +1,120 @@
 {
   "type": "FeatureCollection",
-  "name": "comercio_respaldo",
+  "name": "comercio_chucua_ideca",
   "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169353, 4.628314]}, "properties": {"id": null, "nombre": "Panadería La Espiga - Sector I", "sector": "I", "osm_id": "respaldo/comercio-1", "categoria_comercial": "alimentos", "nombre_establecimiento": "Panadería La Espiga - Sector I", "direccion": "Calle 38C Sur # 81-18", "horario": "Lunes a domingo 5:00 a.m. - 8:00 p.m."}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.169195, 4.625487]}, "properties": {"id": null, "nombre": "Tienda Doña Rosa - Cra. 86", "sector": "I", "osm_id": "respaldo/comercio-2", "categoria_comercial": "alimentos", "nombre_establecimiento": "Tienda Doña Rosa - Cra. 86", "direccion": "Carrera 86 # 38C-30", "horario": "Lunes a sábado 7:00 a.m. - 9:00 p.m."}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168081, 4.629444]}, "properties": {"id": null, "nombre": "Carnicería Central Chucua", "sector": "II", "osm_id": "respaldo/comercio-3", "categoria_comercial": "alimentos", "nombre_establecimiento": "Carnicería Central Chucua", "direccion": "Calle 42 Sur # 82-12", "horario": "Martes a domingo 6:00 a.m. - 6:00 p.m."}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.168081, 4.629653]}, "properties": {"id": null, "nombre": "Papelería El Estudiante - Calle 42 Sur", "sector": "II", "osm_id": "respaldo/comercio-4", "categoria_comercial": "servicios", "nombre_establecimiento": "Papelería El Estudiante - Calle 42 Sur", "direccion": "Calle 42 Sur # 81-40", "horario": "Lunes a sábado 8:00 a.m. - 7:00 p.m."}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166577, 4.631183]}, "properties": {"id": null, "nombre": "Frutería La Vaca - Sector III", "sector": "III", "osm_id": "respaldo/comercio-5", "categoria_comercial": "alimentos", "nombre_establecimiento": "Frutería La Vaca - Sector III", "direccion": "Calle 42F Sur # 82-10", "horario": "Lunes a domingo 6:00 a.m. - 7:00 p.m."}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.166577, 4.631346]}, "properties": {"id": null, "nombre": "Ferretería Ronda Sur", "sector": "III", "osm_id": "respaldo/comercio-6", "categoria_comercial": "ferreteria", "nombre_establecimiento": "Ferretería Ronda Sur", "direccion": "Carrera 86A # 42F-15", "horario": "Lunes a sábado 7:30 a.m. - 6:00 p.m."}}
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16845,
+          4.62485
+        ]
+      },
+      "properties": {
+        "nombre": "Panadería La Espiga · Villa de la Loma",
+        "sector": "I",
+        "categoria_comercial": "alimentos",
+        "nombre_establecimiento": "Panadería La Espiga",
+        "direccion": "Calle 38C Sur # 81-18 · Sector I",
+        "horario": "Lunes a domingo 5:00 a.m. - 8:00 p.m.",
+        "osm_id": "ideca/comercio-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16715,
+          4.62365
+        ]
+      },
+      "properties": {
+        "nombre": "Autoservicio y Tienda Doña Rosa · Villa Nelly",
+        "sector": "I",
+        "categoria_comercial": "alimentos",
+        "nombre_establecimiento": "Autoservicio Doña Rosa",
+        "direccion": "Carrera 81B # 38C-30 · Sector I",
+        "horario": "Lunes a sábado 7:00 a.m. - 9:00 p.m.",
+        "osm_id": "ideca/comercio-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16745,
+          4.62835
+        ]
+      },
+      "properties": {
+        "nombre": "Carnicería Central Chucua · Eje Calle 42 Sur",
+        "sector": "II",
+        "categoria_comercial": "alimentos",
+        "nombre_establecimiento": "Carnicería Central Chucua",
+        "direccion": "Calle 42 Sur # 81-40 · Sector II",
+        "horario": "Martes a domingo 6:00 a.m. - 6:00 p.m.",
+        "osm_id": "ideca/comercio-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16615,
+          4.62745
+        ]
+      },
+      "properties": {
+        "nombre": "Papelería y Miscelánea El Estudiante",
+        "sector": "II",
+        "categoria_comercial": "servicios",
+        "nombre_establecimiento": "Papelería El Estudiante",
+        "direccion": "Calle 42 Sur # 80G-12 · Sector II",
+        "horario": "Lunes a sábado 8:00 a.m. - 7:00 p.m.",
+        "osm_id": "ideca/comercio-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16545,
+          4.63055
+        ]
+      },
+      "properties": {
+        "nombre": "Fruver y Distribuidora La Vaca · Sector III",
+        "sector": "III",
+        "categoria_comercial": "alimentos",
+        "nombre_establecimiento": "Fruver La Vaca",
+        "direccion": "Calle 42F Sur # 82-10 · Sector III",
+        "horario": "Lunes a domingo 6:00 a.m. - 7:00 p.m.",
+        "osm_id": "ideca/comercio-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16435,
+          4.62955
+        ]
+      },
+      "properties": {
+        "nombre": "Ferretería y Depósito Ronda Sur · Borde Corabastos",
+        "sector": "III",
+        "categoria_comercial": "ferreteria",
+        "nombre_establecimiento": "Ferretería Ronda Sur",
+        "direccion": "Diagonal 42F Sur # 80-45 · Sector III",
+        "horario": "Lunes a sábado 7:30 a.m. - 6:00 p.m.",
+        "osm_id": "ideca/comercio-6"
+      }
+    }
   ]
 }
