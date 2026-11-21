@@ -12,12 +12,12 @@
         ]
       },
       "properties": {
-        "nombre": "Paradero SITP Br. Villa Nelly (Cenefa 599A08)",
+        "nombre": "Paradero SITP Br. Villa Nelly · Av. Villavicencio - Kr 80G (599A08)",
         "sector": "I",
         "codigo_paradero": "599A08",
-        "rutas_alimentadoras": "Corredor Av. Villavicencio · Zona F",
-        "direccion": "AV. V/cio - KR 80G",
-        "estado_senalizacion": "buena",
+        "rutas_alimentadoras": "Zonas F / K · Alimentadores Patio Bonito",
+        "direccion": "Av. Villavicencio - Kr 80G",
+        "estado_senalizacion": "regular",
         "osm_id": "ideca/sitp-599A08"
       }
     },
@@ -31,11 +31,11 @@
         ]
       },
       "properties": {
-        "nombre": "Paradero SITP Br. Villa Nelly (Cenefa 034A08)",
+        "nombre": "Paradero SITP Br. Villa Nelly · Av. Villavicencio - Kr 81B (034A08)",
         "sector": "I",
         "codigo_paradero": "034A08",
-        "rutas_alimentadoras": "Corredor Av. Villavicencio · Zona F",
-        "direccion": "AV. V/cio - KR 81B",
+        "rutas_alimentadoras": "Zonas F / K · Corredor Av. Villavicencio",
+        "direccion": "Av. Villavicencio - Kr 81B",
         "estado_senalizacion": "buena",
         "osm_id": "ideca/sitp-034A08"
       }
@@ -45,18 +45,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.169702,
-          4.627091
+          -74.169198,
+          4.625882
         ]
       },
       "properties": {
-        "nombre": "Paradero SITP Br. Villa de la Loma (Cenefa 032A08)",
+        "nombre": "Paradero SITP Br. Villa Nelly · Av. Villavicencio - Kr 81G (033A08)",
         "sector": "I",
-        "codigo_paradero": "032A08",
-        "rutas_alimentadoras": "Corredor Av. Villavicencio · Zona F",
-        "direccion": "AV. V/cio - KR 82 A",
+        "codigo_paradero": "033A08",
+        "rutas_alimentadoras": "Zonas F / K · Corredor Av. Villavicencio",
+        "direccion": "Av. Villavicencio - Kr 81G",
         "estado_senalizacion": "buena",
-        "osm_id": "ideca/sitp-032A08"
+        "osm_id": "ideca/sitp-033A08"
       }
     },
     {
@@ -69,11 +69,11 @@
         ]
       },
       "properties": {
-        "nombre": "Paradero SITP Br. Llano Grande (Cenefa 026A08)",
+        "nombre": "Paradero SITP Br. Llano Grande · Av. C. de Cali - Cl 40 Sur (026A08)",
         "sector": "III",
         "codigo_paradero": "026A08",
-        "rutas_alimentadoras": "Corredor Av. Ciudad de Cali · Zona K",
-        "direccion": "AV. C. de Cali - CL 40 Sur",
+        "rutas_alimentadoras": "Zonas K / M · Corredor Av. Ciudad de Cali",
+        "direccion": "Av. Ciudad de Cali - Cl 40 Sur",
         "estado_senalizacion": "buena",
         "osm_id": "ideca/sitp-026A08"
       }
